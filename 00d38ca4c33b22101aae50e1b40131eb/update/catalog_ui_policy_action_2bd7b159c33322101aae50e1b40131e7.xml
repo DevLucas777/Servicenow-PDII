@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Movie review">4df76981c3fb62101aae50e1b40131d0</catalog_item>
+        <catalog_variable>IO:4b841a41c333a2101aae50e1b4013137</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 12:42:07</sys_created_on>
+        <sys_id>2bd7b159c33322101aae50e1b40131e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>formCamp_avarage_rating</sys_name>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2bd7b159c33322101aae50e1b40131e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 12:55:24</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hiding fields">97a7fd19c33322101aae50e1b4013125</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>formCamp_avarage_rating</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=2bd7b159c33322101aae50e1b40131e7"/>
+</record_update>
