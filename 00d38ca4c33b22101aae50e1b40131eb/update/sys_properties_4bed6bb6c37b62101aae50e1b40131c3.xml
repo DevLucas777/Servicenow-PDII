@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>OMDB Api endpoint</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1798291_netflix.integration_endpoint</name>
+        <read_roles/>
+        <suffix>integration_endpoint</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-09 13:08:15</sys_created_on>
+        <sys_id>4bed6bb6c37b62101aae50e1b40131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1798291_netflix.integration_endpoint</sys_name>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name>sys_properties_4bed6bb6c37b62101aae50e1b40131c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-09 13:08:15</sys_updated_on>
+        <type>string</type>
+        <value>https://www.omdbapi.com/</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=4bed6bb6c37b62101aae50e1b40131c3"/>
+</record_update>
