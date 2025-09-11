@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4192000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=16068000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>create__update_directors</internal_name>
-        <label_cache>[{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.Record","label":"3 - Look Up Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.media","label":"Input➛Media","type":"string","base_type":"string","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_media"],"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_media"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ff8e432a-4332-4070-a11a-d45a5ee06ce6"}},{"name":"52c133ae-458a-42c5-9204-ed211d4e4de7.record","label":"5 - Create Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"01d0c820-4d13-4ea7-9651-4b82b05dee7b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"94d7a058-0eb7-40cd-a007-0505419676d8.item","label":"2 - For Each➛Element","reference_display":"Element","type":"string","base_type":"string","usedInstances":{"ae8d137d-2f24-4750-957a-773943a1fa88":["conditions"],"52c133ae-458a-42c5-9204-ed211d4e4de7":["name"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c19ce5b2-3f6e-462e-a117-2c17c2c3226f.array","label":"1 - Convert String into Array➛Array","reference_display":"Array","type":"array.string","base_type":"array.string","usedInstances":{"94d7a058-0eb7-40cd-a007-0505419676d8":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDa6c4429730b722103bb1c3c71bbdca09","child_label":"Element","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"element","child_uiUniqueId":"4f7af77a-df8d-409c-af31-cb2d1806bfe0","uiUniqueId":"152b2a75-edf3-4a0f-8354-5074ea34590d"}},{"name":"subflow.directors","label":"Input➛Directors","type":"string","base_type":"string","usedInstances":{"c19ce5b2-3f6e-462e-a117-2c17c2c3226f":["string"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"15bf0d3d-f7a2-41cc-a116-2d4fd959f484"}}]</label_cache>
+        <label_cache>[{"name":"subflow.directors","label":"Input➛Directors","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c19ce5b2-3f6e-462e-a117-2c17c2c3226f":["string"],"824ba031-52bc-4258-a7b2-71c691dd856a":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"15bf0d3d-f7a2-41cc-a116-2d4fd959f484","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c19ce5b2-3f6e-462e-a117-2c17c2c3226f.array","label":"6 - Convert String into Array➛Array","reference_display":"Array","type":"array.string","base_type":"array.string","usedInstances":{"94d7a058-0eb7-40cd-a007-0505419676d8":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDa6c4429730b722103bb1c3c71bbdca09","child_label":"Element","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"element","child_uiUniqueId":"4f7af77a-df8d-409c-af31-cb2d1806bfe0","uiUniqueId":"152b2a75-edf3-4a0f-8354-5074ea34590d"}},{"name":"94d7a058-0eb7-40cd-a007-0505419676d8.item","label":"7 - For Each➛Element","reference_display":"Element","type":"string","base_type":"string","usedInstances":{"ae8d137d-2f24-4750-957a-773943a1fa88":["conditions"],"52c133ae-458a-42c5-9204-ed211d4e4de7":["name"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.status","label":"8 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"01d0c820-4d13-4ea7-9651-4b82b05dee7b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"52c133ae-458a-42c5-9204-ed211d4e4de7.record","label":"10 - Create Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.media","label":"Input➛Media","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_media"],"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_media"],"8431188e-8062-45b3-9746-338a91a74f17":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ff8e432a-4332-4070-a11a-d45a5ee06ce6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.Record","label":"8 - Look Up Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8431188e-8062-45b3-9746-338a91a74f17.Records","label":"1 - Look Up Records➛x_1798291_netflix_m2m_Directors_Medias Records","reference":"x_1798291_netflix_m2m_directors_medias","reference_display":"x_1798291_netflix_m2m_Directors_Medias","type":"records","base_type":"records","usedInstances":{"af337dac-6bf6-4dfc-ae54-dfff98c00628":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"af337dac-6bf6-4dfc-ae54-dfff98c00628.item","label":"2 - For Each➛x_1798291_netflix_m2m_Directors_Medias Record","reference":"x_1798291_netflix_m2m_directors_medias","reference_display":"x_1798291_netflix_m2m_Directors_Medias","type":"reference","base_type":"reference","usedInstances":{"e1dee8d2-2a20-4d2b-896e-14a87d28f62e":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <master_snapshot>e2be4a2fc3fb62101aae50e1b401310f</master_snapshot>
         <master_snapshot_digest/>
         <name>Create / Update Directors</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fabe7d67c3bb62101aae50e1b4013160</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Create / Update Directors</sys_name>
         <sys_overrides/>
         <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_update_name>sys_hub_flow_fabe7d67c3bb62101aae50e1b4013160</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:47</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:43</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -236,7 +236,51 @@
     <sys_hub_flow_output action="delete_multiple" query="model=fabe7d67c3bb62101aae50e1b4013160"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fabe7d67c3bb62101aae50e1b4013160"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fabe7d67c3bb62101aae50e1b4013160"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fabe7d67c3bb62101aae50e1b4013160^sys_idNOT IN77d2c6afc3bb62101aae50e1b401311c,bbd2c6afc3bb62101aae50e1b4013119,bfd2c6afc3bb62101aae50e1b401312b,f7d2c6afc3bb62101aae50e1b401311e,ffd2c6afc3bb62101aae50e1b401311d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fabe7d67c3bb62101aae50e1b4013160^sys_idNOT IN269b3aa3c3ff62101aae50e1b4013131,2a9b3aa3c3ff62101aae50e1b4013134,77d2c6afc3bb62101aae50e1b401311c,bbd2c6afc3bb62101aae50e1b4013119,bfd2c6afc3bb62101aae50e1b401312b,f7d2c6afc3bb62101aae50e1b401311e,ffd2c6afc3bb62101aae50e1b401311d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:23:50</sys_created_on>
+        <sys_id>269b3aa3c3ff62101aae50e1b4013131</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
+        <ui_id>8431188e-8062-45b3-9746-338a91a74f17</ui_id>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9leBnE+wkTdO+LQmFhV6gLX3pFiFbciJWlr2SnEtD/n1HluyYxM0mkELLPmou0pmZc2T5de0x4l17o2QQBDi8GF0GQb8fBMNhP8ZhFPWHcRREg8jzPYFTCpEaR5zCco55YdZLFF5ejXpXIRJUJ5wtUdpLEWGSxjqTCqWUMKwggTCVc7x6OZg3qfPuqrx4xjiRVHjXr2++l2MJODSV3vV6x3VsIRxHlEPos6tkpzC9yuslKn3WdttM69xbRyaJgRL4Hl1qKggFDAnmivpeigXBUMqqtkiKyYPgW8OMCQ07eiZ4qdg7nDsKTFxCoaqYWl+9RK6F1pxMsMZPWhaxLqQLjWcZi6my/SA0wQXX46bNBjzkmmXCptiybXbGi1Tc23Z49QbVxMBSKABBc1OoQe7KSJ5m2eKxQnnDRNkT5+RZjHm9wlpLFhXa4Fl7lNMUNkIpznMmpiiX2ZyVyYAl7U45LLoJzxZwqGJT0cWxAd6FvuLuDdgnpfkFS2aquINtIBkAMQ4MQXaEKitk2co5inmhSofEQtm9vI3vqZUac6zUtnJoOfpTGNy2D65iZJtmUmLJcv0DtphTV9zGP0pLF8GWcnEmCDMo1GFBGSn8KmA3sl6rIjId6ZbGzeYoYR3OP6fAyuoqgY2b5bWV7KS2Z7tt28BJLTyb1KCO7yQ2OPzrae109dgW/ENC8eVBkl1s+aQyqZHtZUND+6o4medHQKh4/mCY2YlWH6FyNE8Y5aTti3JjHDtflN7/+UX5kiQHQATZ6THBmSifBwD0s9gfHL5ir3Z4VtJry/3ShlW8rwHc0Vnn/WQlHAGnUsITnN15tnhaIFb3fUmZ3bu+MjoB9M8mgH7vPAJY12XWjWzpefUiNNOs4t9NPN6NBwo2EsJNm8BOOjM89czeZl/A/ZMU3CSb9Uw+4NyZn44fKNL/zCtgBqnuPGT1ixaMTKnenl5FkUwvMP/d5neMQ9WgyvI+4Rk6OCjbYbiVKCgFSapgeM13aAjPo/07JPSt+bQr5AgsVTvu8LLzWINpReiuEVA6nZazad4jP2urI/ngjA/GL/slrYbVqsFqZt/i7+18Qnj7C2mFuovdEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Delete Record">c3e09916c31332002841b63b12d3aedf</action_type>
+        <action_type_parent display_value="Delete Record">a8f274c8c3c232002841b63b12d3aee9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>af337dac-6bf6-4dfc-ae54-dfff98c00628</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:23:50</sys_created_on>
+        <sys_id>2a9b3aa3c3ff62101aae50e1b4013134</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
+        <ui_id>e1dee8d2-2a20-4d2b-896e-14a87d28f62e</ui_id>
+        <values>H4sIAAAAAAAA/42SQW+jMBCF/8rKZ4IgZNkkt1WjSpW6W6mVeqkqNNjjxJKxWdukZVH++46B0KqnPc7zPPt7D14GpgTbs6zGbLfLS17kRbHOsvV2k9dlUedrUQBizhJmoEHadMitEzSfQXdRGAaQRfFDAF+VtSxXGyH5CvD7ZiWklLstz7JyvU1VwOZyIZ9QvtXQP892UvhJaeHQsP3La8JacPRSQMf2w5ej/0XVUKOm1ccr61f20LdxFpZ3DZpQqat4PzsP88m3uwOdkCniZAnD94BGIHFI0B4T1oAREKzr2T64jgSHIB6M7peNkzJhytnAu1d/6eFNFvckUjA+d7CM1dzPJMsDBHiim3no3FKXVRz9VIlACZ0ON5+1aeGhDcqayRKg1le31V1jfk+FsOWCT5+j8wSBbcwZyadY8ulk3x6vkLfKjI3MEbXloJcJQnCq7kLEGRhqHCtuoG2VOVats2c1mgmlSY+ahlRq+0ZvenU0KfDInVKrkN6SfhjlZ3AqhvhF15D5kjDf+xsN3n9EoQ6rP10kmYLNEaqxhbGCavwRopk71Yaf9NQZZ/DL6z8w/KxmDQMAAA==</values>
+    </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
@@ -246,16 +290,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
         <generation_source/>
-        <order>3</order>
+        <order>8</order>
         <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 13:15:58</sys_created_on>
         <sys_id>77d2c6afc3bb62101aae50e1b401311c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:10:39</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
         <ui_id>ae8d137d-2f24-4750-957a-773943a1fa88</ui_id>
         <values>H4sIAAAAAAAA/+VY32+jOBD+VxDPSc4kJEDfTo0irbS3lba9fdlbWQabxjrHsMb0V5T//cYYSJTQJOymUqt79HhsfzPzfYPN97XLqXvl0ghFaRRNwwChyQSh2WySEC+OJ7MkRjHx3YEryYqBpyaxYDB8IKI04yfsBVE4jjwsmU4Ff8KUK5boTIET5UUuyPO32ne+nUmWXFDFpHv1/cfAzYmC3TVT7tV6b+pceILETIDrXY1vD65+ztshruas7fPuMueLncgUNVDQwGVPmknKAENKRMEG7opISiCE59aiGKE3UmwNSy417Oga56eCv8C5ITJ+KYOoEmbn2iGuk2TN6ZxocqtVmehS1a7JMuMJK2w+KEtJKfT1rs063OSaZ9IusWHb1ZkoV/KLTYfbbtDUBCxlASBYbgI1yOsw0ttl9vi1QbngsspJPSmyhIh2RLRWPC61wbN2mWAr2AivSJ5zeY9zlT3wajFgWY3uBQxGqcge4dCC38sRSQzwEeSVjBZgn1fmb0RxE8VfsA0zlEm5AIZgW8IiK1WVygeciLKoJhSRhd3L3Qzc4rm4FqQotpFDyvHP0uC2eagjxjZpZkmieK7/hC0eWB3cZtAoZHqUgtGWckkmKTcoih2ZmLl/SlhK1+vIpwFB03CIWBwMfZTQIUEoGKIpmvpeNAtmNBxxzVabzaGGfn2jnpI7HW8juevdgLuSUIvvwPa5a4NafN7FxOcj9JHkB4e/P/X115NNwQlRefQoyeiWT0WmNLa53FHVoTx68/wMCA3Pbwwznfj5NVQ1zVPOBO36xizMxN43Zvz//Ma8S5IDIIpt9bgUXFYXBgD6VuyfHqVe7O3xrKLXlvuVjRTJoQaIozPnpbcSzoDTKOEWznbuLJ4OiE2/ryiz3+sbYy2AycUEMBlfRgDrNsw2kR05b+6IppqN/4vxJ/v+QMGdBd6mS2C9zvT6njneHAp40kvBu2SzM/NXOHfhy+Qrihy8ZQtYwtL6PGz1ix85vWd6e3rjRTP9SMS/XfM143BTqCq8N7iYekffRvHOxZSneAWV4zncn+EhBuQoMFEMp1kpKa5vzlsimUqmXBW6dj5sNF8Z6Ec6GQjT0UvmVN5O693zQ3w6jiaVn1KnCaQ+rXAgEKcKxGkD6Rd2n6blX/ByeummtSBcVNWAR1G+U06mVPXy7mpcJwp5hBFndrUzQXkXBfX7ba9LAp3t7wTWD/HCvnxrShiJ/TGZBRPPQ8hDNEBhEHjhLE5nJPDTrUYxLmQC3RR2ToEqsD1uqNHU2TvsP3Wz7ddnzgDVMHCeSfPUHgfaMaigvE6D6jTuup/EWSYYkXsN5Q6Q/7GovggtXafvrql8iN9NJb/bz7Q1deb6ra4NJf9b8p8l+2QoFjI0Dj2aDMPAC4Z+SmfDiJLpkETxNJhQlvjpJW8CP/4DtNXF08YVAAA=</values>
     </sys_hub_action_instance_v2>
@@ -268,16 +312,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
         <generation_source/>
-        <order>1</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 13:15:58</sys_created_on>
         <sys_id>bbd2c6afc3bb62101aae50e1b4013119</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:10:39</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
         <ui_id>c19ce5b2-3f6e-462e-a117-2c17c2c3226f</ui_id>
         <values>H4sIAAAAAAAA/+1TTW/bMAz9K4POtmHZcb5uQ4sCA7YVWLdeiiKgJToRIH9UktNmgf/7qNjxgmTYWmCnYTfxiRQfn/ge9kxJtmSLREziZDETaT5LEh5zAMxi5Pkk5ikXkgWsghIp0zqjqjXFW9CtB/Z72+aFrp8jqQwKVxvbdXQvlW007O7/kCY2SkuDFVs+PAasAUNtHBq23J9dvZanhhw1pd4diZ4Td7vmIv54XlQb6UnwgOGLw0oidS9AWwxYCZUE4r9jS2daAgyCvK30bszYqMrRY8znvlj1ndrN4zj2mQXSQAL72zFcDWL1cHENDohJK1xrhlSxqZVA20shsYBWu6tTrE+4bZyqq77EQa6P1bVuy+pzLwQbHzj+DSGtJRLY+Ek992GQ4m5TP385srxR1UGU4VLXAvQYgSPp8tZ5PnvWqq9nKvfIhc6osaSOqxKahpBVY+qtOnQh0mW01hREfm2InVXrKgLhJ4zoByC6Ifz6AN+DUX7cT/QMFft23yr11OIHvzVTnvG0yCCUBUzCScqLcJGiDDFbYJZwgUmasi5gdmevNFj7Uyj6odVT68fsZRsEWvUa+xJhVOPeE6ktjlr0oNdhGN+fLhO7rgsG//Hp7/Za8pM1Ru8RWr8TCwbvLv12wN5mrleQGM11wuIXxN5iseS/xf4Fi0GcYl6IMJnnZDGMF+Gc8yTMgU/5LFvEYiL+nsW6xx/Kz9fbuQYAAA==</values>
     </sys_hub_action_instance_v2>
@@ -290,16 +334,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
         <generation_source/>
-        <order>8</order>
+        <order>13</order>
         <parent_ui_id>53731ac4-a8d8-48bf-90fa-ed7b52007ed1</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 13:15:58</sys_created_on>
         <sys_id>bfd2c6afc3bb62101aae50e1b401312b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:10:39</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
         <ui_id>1fade5de-7cee-4a3c-a918-9010d0dffc2f</ui_id>
         <values>H4sIAAAAAAAA/9VUy27bMBD8lYBnWdDDtmTfigQ+NQmQFL6kqbASVzYB6lGScuwa/vcu9XCMwE5ToCgQ37i7s5wZavy0Z4KzOZv66E1m/jQL/TAMPC+Ix346DVM/4CEgjpnDSiiQJg2kEpP24LANyMYWt4kfzeJg5iclmlyKbVIERcKFwsxUSicFcgGaAFzoWsJu+S7u5oi7HXDZWkiusGTzp2eH1aDofoOKzfdvWh9VIyFFSaPfrJwL6syuPlv7eoq9uusaleKWj+cw3BosORKRHKRGhxVQciA9OzY3qqGCQuD3pdwdJ9aiNLSQ2dmtFr/o2tizczmSsgy73vGY9DZ25fwGDDzS5sw0qh/N1pXIUHeecMyhkeb6tNYN3NdGVGUHaWX26Eo2RXnXWcKOC4ZXo0qjiQTWVqdl3svIH9fVy8PAciHK1pK+KasM5PEExiiRNsby2TOUWNCipIC6FuUqqVW1ES2YuBTuStLBzWX1QpdqsSpdyCxxl2wFd0H1m7a8BCWsiltaQ+CDw/ROX0vQ+lULmZj8bCyTTlmvIelssJBMidp8oQs22NM9OENMOHqzix+Wn75+SG0y9LsRGeLxvfG8kO/3gDH3w4iPgjwYj8bRxBvNJhGMoiicjUPwc4hj9wEz+tIOhx9nomPDMizTTWr9ctvi4fCR6P1nPn8Z6T87P0R6IVByfeYphjxjQUYYTLqneZPpvnm17Jt9rv1/lWt/6rW/T5TuTtynD/fJ//iFmD//Bho1S7oPBwAA</values>
     </sys_hub_action_instance_v2>
@@ -312,16 +356,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
         <generation_source/>
-        <order>6</order>
+        <order>11</order>
         <parent_ui_id>01d0c820-4d13-4ea7-9651-4b82b05dee7b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 13:15:58</sys_created_on>
         <sys_id>f7d2c6afc3bb62101aae50e1b401311e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:10:39</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
         <ui_id>eaf9d31c-b714-45f6-a0a7-1e119114a155</ui_id>
         <values>H4sIAAAAAAAA/9VUy27bMBD8lYBnWdDLju1bEcOnJgGawpc0EVbiyiZAPUpSjl1D/96lHo4R2GkKFAXiG3d3ljNDjR8PTHA2ZxMfvfHMn6ShH4aB5wXTyE8mYeIHPATEiDmsgBxp0kAiMW4PDtuCrG1xF/vXs2kw8+MCTSbFLs6DPOZCYWpKpeMcuQBNAC50JWG/ehe3OOJuB1y6EZIrLNj88clhFSi636Bi88Ob1kfVSEhQ0uh3K+eCOrOvzta+nmKv7rpGqbjl4zkMdwYLjkQkA6nRYTkUHEjPns2NqqmgEPh9IffHiY0oDC1kdnanxS+6durZuQxJWYpd73iMexu7crYAAw+0OTW16kfTTSlS1J0nHDOopbk5rXUD95URZdFBWpk9upR1Xtx1lrDjguHVqFJrIoGV1WmZ9zKyh0358m1guRRFa0nflGUK8ngCY5RIamP5HBhKzGlRnENViWIdV6rcihZMXHJ3LengZrJ8oUu1WBcupJa4S7aCu6T6oi2vQAmr4pbWELhxmN7rGwlav2ohE+OftWXSKes1xJ0NFpIqUZkvdMEWe7qNM8SEoze7+GH5yeuH1CZDvxuRIR4/as8L+eEwDlLaCjiKxlMYRUE6Hs0CLxohD3yfRxhxvHYJQl9a0zyfiY4Ny7BM14n1y22LTfOR6P1nPn8Z6T87P0R6KVByfeYphjxjTkYYjLuneZPpvnm16pt9rv1/lWt/4rW/T5TuTtynD/fJ//j5mA9FS/pyPGz3PBi2yI8uNk3z9BsvGWdYXgcAAA==</values>
     </sys_hub_action_instance_v2>
@@ -334,50 +378,24 @@
         <display_text/>
         <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
         <generation_source/>
-        <order>5</order>
+        <order>10</order>
         <parent_ui_id>01d0c820-4d13-4ea7-9651-4b82b05dee7b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 13:15:58</sys_created_on>
         <sys_id>ffd2c6afc3bb62101aae50e1b401311d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:10:39</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:26:57</sys_updated_on>
         <ui_id>52c133ae-458a-42c5-9204-ed211d4e4de7</ui_id>
         <values>H4sIAAAAAAAA/9VUTY/aMBD9KyufQ+QQCIRbtYhTuyt1Ky7bVeTEE7DkOKnjsFCU/95xnADaBfVDvSy3efNm/N5khucjEZwsSBQAncZBlIVBGI4pHc8nQRqFaTDmIQOYEI8oVgAyDUslJF3gkR2TjQX3STCL5+M4SBSYXIp9woWGzJQaSVzUlWSHdc9dnjPZVkiuQZHF84tHKqaxqwFNFsc3qT/VKFkKEqnfrMgbms2huop9vqy9e3CJUnOrh3oE9gYUBxSSM1mDRwqmOEMfB7IwukFAA+OPSh5OjK1QBhsSy93X4ic+O6eWlwM6y8DlTmHSD8rB+ZIZ9oSdM9PonpptS5FB7WbCIWeNNPeXmCM8VkaUypV0NvvqUjaFenAjIacGw3dBpKlRBFTWp1Xe28iftuXr10HlSqhuJH1SlhmTp4gZo0XaGKvnSEBCgY2SglWVUJuk0uVOdMWopfA3EgM/l+UrPlqLjfJZZoX7OFbmrxBfdvCaaWFdfME2WNx6pD7U95LV9dkLDjH50VglzlnvIXFjsCWZFpX5hA/soJfbesPyc6DxzcUK0vMidfteXyy+xb83lIb8eIwnfMbodD6ikM5GE5rxEaN0NqJTOp0EcTSL+NwXBoq2fX8V/97oL4/o916HI1oJkLy+Yn64ICjQgYHEDePNFfXJu3Wf7C8p+F+XFES0+32ge3LmPvw5XfxzXj+sAbSi3e4cb9DYDvhpXm3bvvwCvRormpAGAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fabe7d67c3bb62101aae50e1b4013160"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fabe7d67c3bb62101aae50e1b4013160^sys_idNOT IN3bd2c6afc3bb62101aae50e1b401312b,bfd2c6afc3bb62101aae50e1b401311a,ffd2c6afc3bb62101aae50e1b401311c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fabe7d67c3bb62101aae50e1b4013160^sys_idNOT IN229b3aa3c3ff62101aae50e1b4013133,3bd2c6afc3bb62101aae50e1b401312b,a50c72e3c3ff62101aae50e1b40131c2,bfd2c6afc3bb62101aae50e1b401311a,e50c72e3c3ff62101aae50e1b40131c3,ffd2c6afc3bb62101aae50e1b401311c"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">77d2c6afc3bb62101aae50e1b401312b</block>
-        <comment/>
-        <connected_to>01d0c820-4d13-4ea7-9651-4b82b05dee7b</connected_to>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>7</order>
-        <outputs_assigned/>
-        <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-11 13:15:58</sys_created_on>
-        <sys_id>3bd2c6afc3bb62101aae50e1b401312b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:45</sys_updated_on>
-        <ui_id>53731ac4-a8d8-48bf-90fa-ed7b52007ed1</ui_id>
-        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">b7d2c6afc3bb62101aae50e1b401311a</block>
+        <block display_value="">a69b3aa3c3ff62101aae50e1b4013132</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -391,14 +409,118 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-11 13:15:58</sys_created_on>
-        <sys_id>bfd2c6afc3bb62101aae50e1b401311a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-09-11 17:23:50</sys_created_on>
+        <sys_id>229b3aa3c3ff62101aae50e1b4013133</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:45</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:41</sys_updated_on>
+        <ui_id>af337dac-6bf6-4dfc-ae54-dfff98c00628</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhr/m2LkVGAr00Bboil6GwqAlOhEmS54kJ/UM//dRsZMOPe5k85F8fE/kxMzg+8G7V3PnnDxotv/5vmFSB4z+J6ahQ7Zn0mPn2IadQA0hnqYyz5KkLHFbxkW6zb812bba5cU2y0qoEtjlbbKLXpAbK9w8U6uQrlcwvv0/Az9KJSyuInuwpM2jZfvpS8qPPdYKGlQ0aGWgfikoTCrRVklc8SwtsjSO0zJPmiJrklRkgKKgumvnw2r6yxsEdgrtjZc+QUUabxh+eNQCaVALyuGGdaAFeGNHtvd2IMAiiGetxlvFUWpPdCzUfjj5h7iTOA6FLZIjjkvyFtbrQy4wPxrJ8bn30ugF8dCotYcbNXT6aZEfVoAtDMpfV0DI4IgP+6A5qFgltT+O5vxyHXgv9cXfmlSGg7pF4L2VzeDRhTWgwo6I6g76XupD3Vtzkpdm0tJFB0VB1CpzpqHh3CLgQXhETwTRPeHfL/AbWBlcPBINNc8X9/XvIcxdfKyK68U0FThuZe/viO6Eq7j5PdzrwuSWwxDIpaOBrwF7uF55SIy0ZMn/hc7G/gpSP7H5L5DygVsvAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">77d2c6afc3bb62101aae50e1b401312b</block>
+        <comment/>
+        <connected_to>01d0c820-4d13-4ea7-9651-4b82b05dee7b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 13:15:58</sys_created_on>
+        <sys_id>3bd2c6afc3bb62101aae50e1b401312b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:41</sys_updated_on>
+        <ui_id>53731ac4-a8d8-48bf-90fa-ed7b52007ed1</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">610c72e3c3ff62101aae50e1b40131c2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:25:41</sys_created_on>
+        <sys_id>a50c72e3c3ff62101aae50e1b40131c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:41</sys_updated_on>
+        <ui_id>824ba031-52bc-4258-a7b2-71c691dd856a</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOhufYTbD2MgQrCgzYGqAtetlaQ5bohJgseZKcNAvy30f5Iw3WdAu2HXeLHynyPfIR2TLT+Lrx7s7MnMOFZhefHyKGOmD0e8tQsgtWJrwcn4uxyNJpliZJ+vZsXEyzYpzKjAPPWMQ0r4AyhdESPRqdt0DEVlw1IXCJFoQ31o3QjaCq/WZk7Ag1xVG+o0SJrlZ8c39qvliikhZ6xjW31M+DZRfbn0J+U0OueAGKyt56i3pBz0/VNTx8PwgbfWyR1xWHfoS7oZOxMtAaJxGDJw9aArUuuXIQsYpryUnlZo9Y4HKu1TOwRO2pHAvJTw6/U+10MgmJJZBGAV1w/5n3g+xgsTQoYF4Hgh3ieaH6N8KoptLXnY6wAih5o/ywAkIaR/WgDqQDi55Sebs065uh4RXqVmAfVEZwtf/insZQNB5cWAwoqKhQXvG6puHktTUrbB8Tlype0GohLpVZU9PgxpiLQDymGfH4ivDLFr7nFoOKT1SGHnc0C+5Q5K1zqZy3JGHXjiX/1gRCncBeSt5NgxKcsFj7GfVZQc96F/W2P+eTcjJOJsftcTY9YoIDx2+3rimCmFgOXt7tvjRJksnH+c0votdvZi/v4S+r/YtrOWEcL67l+IheOZH0NycSlnrihSRJ8v9EDk8EXd5ZvdfWNv/jC3kINu86uM43EgQ6InIXsA/D/0cIbMgAKA6htbFfg4RnbPcD8lgFQIkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b7d2c6afc3bb62101aae50e1b401311a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 13:15:58</sys_created_on>
+        <sys_id>bfd2c6afc3bb62101aae50e1b401311a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:41</sys_updated_on>
         <ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</ui_id>
         <values>H4sIAAAAAAAA/51SwW7bMAz9F50Tw5Y7t8mtwFCgh65AW/QyFAYt0YlQWVIlOaln+N9LxU429LiTzUfy8T2RI7N9dH0ML/Y2BLUzbPv7bcWUSRj9j8xAh2zLVMQusBU7gO5TPI6i2Aj80fB12Va4vqo4rqEortdcFNeCi5Lzqs3AeximiRqlCk7D8Pq//WKvtPS4CHTgSVdEz7bjt1QcHNYaGtQ05gmF9TIJV5LCYiPbTZFviL0qeZ7zm6uiqcqm4LIElBXVnTvvF8Pf/Cd2Cv2Flz5JBc9XDD8jGok0qAUdcMU6MBKi9QPbRt8T4BHko9HDpWKvTCQ6lmo/g/pD3EWep8IWyZHAOXkJ6+UZZ1jsrRL46KKyZkYiNHrpEVb3nfk1y08LwBZ6Hc8LIKQPxIcuaU4qFknt894en84D75Q5+VuS2grQlwhi9KrpI4a0BtTYEVHdgXPK7Grn7UGdmklLl+00BVmr7ZGGplPLQCThGT0RZHeE/zzBr+BVcvFANNQ8ndzXH32aO/tYFNezaSoIwisXb4nugIu46S3d6swU5sOQKFSggS8Juz9feEoMtGQl/oWO1r8nqX+x6Qu7Qq/LKwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a10c72e3c3ff62101aae50e1b40131c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>824ba031-52bc-4258-a7b2-71c691dd856a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:25:41</sys_created_on>
+        <sys_id>e50c72e3c3ff62101aae50e1b40131c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:41</sys_updated_on>
+        <ui_id>07494011-392e-4fb1-ad51-3ba2b1627d38</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -412,17 +534,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
+        <order>9</order>
         <outputs_assigned/>
         <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 13:15:58</sys_created_on>
         <sys_id>ffd2c6afc3bb62101aae50e1b401311c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:45</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:41</sys_updated_on>
         <ui_id>01d0c820-4d13-4ea7-9651-4b82b05dee7b</ui_id>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWdDD8utSBA0CFGgboAlyaQJhRa5sojSpkpQd1/C/d6mHYzROWwQ99mbOPmZmNfA+0I2rG2fv9KW1YqmCxdfHMBDKY/R7HyhYY7AImFZcOKFV0QJhsAHZ+MKVMMicNhdKu4tKN4q/oyoXtpawu/9tE1sJyQ32nDUY2uzQBIv9LyW3q7GQUKKkXbfOCLWkccHpVcVQJXOWsCydZGkcp7NxUk6yMkl5BggZ9Q2D7wcLFx9bJHzVm+cj3A5M2nAvK4nDAJ8cKo5EXYG0GAZrUBzI2u6IGAR+o+QzsBLK0brANz9Z8YN2p3nuGyskjwy74vFZ9NfrYLbSguFN7QV2iINS9jNMy2atPnc+/N2xgka64e6ENJb2Ye1FexW9pOp2pbdfBsJroVqDfVFqBvL4AkdnKBuH1n8YlLimRcUa6pqOU9RGb0Q7TFrW0VLSI6qk3hKpz1MEzAuP6EYQXRN+1cL3YIR38YnW0HAnswQrWNFmj9Y5QxYO7VmK740X1BnsrRTdNajBMiNqd0k8G+xVH8KXwT3J7H4POONJNuWjtErHo/E0j0fzfAqj6TSbjzNIKpjNIuvANfZweGjiOOPJy1i/ec+/SP4c8ipP4vx88seTc8k/k/nX457+Ie7+A/1l2uM4/h/307gLW3Sx7b215G9O+6OPdsdgu9xwZMKSkDuPfRj+zX1hRwEQ7BTaavPNW3jGDj8BBvnBGRcGAAA=</values>
         <workflow_reference/>
@@ -493,7 +615,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>create__update_directors</internal_name>
-        <label_cache>[{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.Record","label":"3 - Look Up Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.media","label":"Input➛Media","type":"string","base_type":"string","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_media"],"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_media"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ff8e432a-4332-4070-a11a-d45a5ee06ce6"}},{"name":"52c133ae-458a-42c5-9204-ed211d4e4de7.record","label":"5 - Create Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"01d0c820-4d13-4ea7-9651-4b82b05dee7b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"94d7a058-0eb7-40cd-a007-0505419676d8.item","label":"2 - For Each➛Element","reference_display":"Element","type":"string","base_type":"string","usedInstances":{"ae8d137d-2f24-4750-957a-773943a1fa88":["conditions"],"52c133ae-458a-42c5-9204-ed211d4e4de7":["name"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c19ce5b2-3f6e-462e-a117-2c17c2c3226f.array","label":"1 - Convert String into Array➛Array","reference_display":"Array","type":"array.string","base_type":"array.string","usedInstances":{"94d7a058-0eb7-40cd-a007-0505419676d8":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDa6c4429730b722103bb1c3c71bbdca09","child_label":"Element","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"element","child_uiUniqueId":"4f7af77a-df8d-409c-af31-cb2d1806bfe0","uiUniqueId":"152b2a75-edf3-4a0f-8354-5074ea34590d"}},{"name":"subflow.directors","label":"Input➛Directors","type":"string","base_type":"string","usedInstances":{"c19ce5b2-3f6e-462e-a117-2c17c2c3226f":["string"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"15bf0d3d-f7a2-41cc-a116-2d4fd959f484"}}]</label_cache>
+        <label_cache>[{"name":"subflow.directors","label":"Input➛Directors","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c19ce5b2-3f6e-462e-a117-2c17c2c3226f":["string"],"824ba031-52bc-4258-a7b2-71c691dd856a":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"15bf0d3d-f7a2-41cc-a116-2d4fd959f484","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c19ce5b2-3f6e-462e-a117-2c17c2c3226f.array","label":"6 - Convert String into Array➛Array","reference_display":"Array","type":"array.string","base_type":"array.string","usedInstances":{"94d7a058-0eb7-40cd-a007-0505419676d8":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDa6c4429730b722103bb1c3c71bbdca09","child_label":"Element","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"element","child_uiUniqueId":"4f7af77a-df8d-409c-af31-cb2d1806bfe0","uiUniqueId":"152b2a75-edf3-4a0f-8354-5074ea34590d"}},{"name":"94d7a058-0eb7-40cd-a007-0505419676d8.item","label":"7 - For Each➛Element","reference_display":"Element","type":"string","base_type":"string","usedInstances":{"ae8d137d-2f24-4750-957a-773943a1fa88":["conditions"],"52c133ae-458a-42c5-9204-ed211d4e4de7":["name"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.status","label":"8 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"01d0c820-4d13-4ea7-9651-4b82b05dee7b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"52c133ae-458a-42c5-9204-ed211d4e4de7.record","label":"10 - Create Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.media","label":"Input➛Media","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"eaf9d31c-b714-45f6-a0a7-1e119114a155":["x_1798291_netflix_media"],"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_media"],"8431188e-8062-45b3-9746-338a91a74f17":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ff8e432a-4332-4070-a11a-d45a5ee06ce6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"ae8d137d-2f24-4750-957a-773943a1fa88.Record","label":"8 - Look Up Record➛Director Record","reference":"x_1798291_netflix_director","reference_display":"Director","type":"reference","base_type":"reference","usedInstances":{"1fade5de-7cee-4a3c-a918-9010d0dffc2f":["x_1798291_netflix_director"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8431188e-8062-45b3-9746-338a91a74f17.Records","label":"1 - Look Up Records➛x_1798291_netflix_m2m_Directors_Medias Records","reference":"x_1798291_netflix_m2m_directors_medias","reference_display":"x_1798291_netflix_m2m_Directors_Medias","type":"records","base_type":"records","usedInstances":{"af337dac-6bf6-4dfc-ae54-dfff98c00628":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"af337dac-6bf6-4dfc-ae54-dfff98c00628.item","label":"2 - For Each➛x_1798291_netflix_m2m_Directors_Medias Record","reference":"x_1798291_netflix_m2m_directors_medias","reference_display":"x_1798291_netflix_m2m_Directors_Medias","type":"reference","base_type":"reference","usedInstances":{"e1dee8d2-2a20-4d2b-896e-14a87d28f62e":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <master>true</master>
         <name>Create / Update Directors</name>
         <natlang/>
@@ -510,7 +632,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e2be4a2fc3fb62101aae50e1b401310f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -518,7 +640,7 @@
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -710,7 +832,7 @@
     <sys_hub_flow_output action="delete_multiple" query="model=e2be4a2fc3fb62101aae50e1b401310f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e2be4a2fc3fb62101aae50e1b401310f"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e2be4a2fc3fb62101aae50e1b401310f"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e2be4a2fc3fb62101aae50e1b401310f^sys_idNOT IN22be4a2fc3fb62101aae50e1b401312c,26be4a2fc3fb62101aae50e1b401312e,26be4a2fc3fb62101aae50e1b401312f,2ebe4a2fc3fb62101aae50e1b401312e,e6be4a2fc3fb62101aae50e1b401312d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e2be4a2fc3fb62101aae50e1b401310f^sys_idNOT IN22be4a2fc3fb62101aae50e1b401312c,26be4a2fc3fb62101aae50e1b401312e,26be4a2fc3fb62101aae50e1b401312f,2ebe4a2fc3fb62101aae50e1b401312e,7b9b7aa3c3ff62101aae50e1b4013127,b79b7aa3c3ff62101aae50e1b4013128,e6be4a2fc3fb62101aae50e1b401312d"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Convert String into Array">5ec40297c3b722101aae50e1b40131c9</action_type>
         <action_type_parent display_value="Convert String into Array">e9734617c3b722101aae50e1b4013107</action_type_parent>
@@ -720,16 +842,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
         <generation_source/>
-        <order>1</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>22be4a2fc3fb62101aae50e1b401312c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>c19ce5b2-3f6e-462e-a117-2c17c2c3226f</ui_id>
         <values>H4sIAAAAAAAA/+1TTW/bMAz9K4POtmHZcb5uQ4sCA7YVWLdeiiKgJToRIH9UktNmgf/7qNjxgmTYWmCnYTfxiRQfn/ge9kxJtmSLREziZDETaT5LEh5zAMxi5Pkk5ikXkgWsghIp0zqjqjXFW9CtB/Z72+aFrp8jqQwKVxvbdXQvlW007O7/kCY2SkuDFVs+PAasAUNtHBq23J9dvZanhhw1pd4diZ4Td7vmIv54XlQb6UnwgOGLw0oidS9AWwxYCZUE4r9jS2daAgyCvK30bszYqMrRY8znvlj1ndrN4zj2mQXSQAL72zFcDWL1cHENDohJK1xrhlSxqZVA20shsYBWu6tTrE+4bZyqq77EQa6P1bVuy+pzLwQbHzj+DSGtJRLY+Ek992GQ4m5TP385srxR1UGU4VLXAvQYgSPp8tZ5PnvWqq9nKvfIhc6osaSOqxKahpBVY+qtOnQh0mW01hREfm2InVXrKgLhJ4zoByC6Ifz6AN+DUX7cT/QMFft23yr11OIHvzVTnvG0yCCUBUzCScqLcJGiDDFbYJZwgUmasi5gdmevNFj7Uyj6odVT68fsZRsEWvUa+xJhVOPeE6ktjlr0oNdhGN+fLhO7rgsG//Hp7/Za8pM1Ru8RWr8TCwbvLv12wN5mrleQGM11wuIXxN5iseS/xf4Fi0GcYl6IMJnnZDGMF+Gc8yTMgU/5LFvEYiL+nsW6xx/Kz9fbuQYAAA==</values>
     </sys_hub_action_instance_v2>
@@ -742,16 +864,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
         <generation_source/>
-        <order>5</order>
+        <order>10</order>
         <parent_ui_id>01d0c820-4d13-4ea7-9651-4b82b05dee7b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>26be4a2fc3fb62101aae50e1b401312e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>52c133ae-458a-42c5-9204-ed211d4e4de7</ui_id>
         <values>H4sIAAAAAAAA/9VUTY/aMBD9KyufQ+QQCIRbtYhTuyt1Ky7bVeTEE7DkOKnjsFCU/95xnADaBfVDvSy3efNm/N5khucjEZwsSBQAncZBlIVBGI4pHc8nQRqFaTDmIQOYEI8oVgAyDUslJF3gkR2TjQX3STCL5+M4SBSYXIp9woWGzJQaSVzUlWSHdc9dnjPZVkiuQZHF84tHKqaxqwFNFsc3qT/VKFkKEqnfrMgbms2huop9vqy9e3CJUnOrh3oE9gYUBxSSM1mDRwqmOEMfB7IwukFAA+OPSh5OjK1QBhsSy93X4ic+O6eWlwM6y8DlTmHSD8rB+ZIZ9oSdM9PonpptS5FB7WbCIWeNNPeXmCM8VkaUypV0NvvqUjaFenAjIacGw3dBpKlRBFTWp1Xe28iftuXr10HlSqhuJH1SlhmTp4gZo0XaGKvnSEBCgY2SglWVUJuk0uVOdMWopfA3EgM/l+UrPlqLjfJZZoX7OFbmrxBfdvCaaWFdfME2WNx6pD7U95LV9dkLDjH50VglzlnvIXFjsCWZFpX5hA/soJfbesPyc6DxzcUK0vMidfteXyy+xb83lIb8eIwnfMbodD6ikM5GE5rxEaN0NqJTOp0EcTSL+NwXBoq2fX8V/97oL4/o916HI1oJkLy+Yn64ICjQgYHEDePNFfXJu3Wf7C8p+F+XFES0+32ge3LmPvw5XfxzXj+sAbSi3e4cb9DYDvhpXm3bvvwCvRormpAGAAA=</values>
     </sys_hub_action_instance_v2>
@@ -764,16 +886,16 @@
         <display_text/>
         <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
         <generation_source/>
-        <order>8</order>
+        <order>13</order>
         <parent_ui_id>53731ac4-a8d8-48bf-90fa-ed7b52007ed1</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>26be4a2fc3fb62101aae50e1b401312f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>1fade5de-7cee-4a3c-a918-9010d0dffc2f</ui_id>
         <values>H4sIAAAAAAAA/9VUy27bMBD8lYBnWdDDtmTfigQ+NQmQFL6kqbASVzYB6lGScuwa/vcu9XCMwE5ToCgQ37i7s5wZavy0Z4KzOZv66E1m/jQL/TAMPC+Ix346DVM/4CEgjpnDSiiQJg2kEpP24LANyMYWt4kfzeJg5iclmlyKbVIERcKFwsxUSicFcgGaAFzoWsJu+S7u5oi7HXDZWkiusGTzp2eH1aDofoOKzfdvWh9VIyFFSaPfrJwL6syuPlv7eoq9uusaleKWj+cw3BosORKRHKRGhxVQciA9OzY3qqGCQuD3pdwdJ9aiNLSQ2dmtFr/o2tizczmSsgy73vGY9DZ25fwGDDzS5sw0qh/N1pXIUHeecMyhkeb6tNYN3NdGVGUHaWX26Eo2RXnXWcKOC4ZXo0qjiQTWVqdl3svIH9fVy8PAciHK1pK+KasM5PEExiiRNsby2TOUWNCipIC6FuUqqVW1ES2YuBTuStLBzWX1QpdqsSpdyCxxl2wFd0H1m7a8BCWsiltaQ+CDw/ROX0vQ+lULmZj8bCyTTlmvIelssJBMidp8oQs22NM9OENMOHqzix+Wn75+SG0y9LsRGeLxvfG8kO/3gDH3w4iPgjwYj8bRxBvNJhGMoiicjUPwc4hj9wEz+tIOhx9nomPDMizTTWr9ctvi4fCR6P1nPn8Z6T87P0R6IVByfeYphjxjQUYYTLqneZPpvnm17Jt9rv1/lWt/6rW/T5TuTtynD/fJ//iFmD//Bho1S7oPBwAA</values>
     </sys_hub_action_instance_v2>
@@ -786,18 +908,62 @@
         <display_text/>
         <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
         <generation_source/>
-        <order>6</order>
+        <order>11</order>
         <parent_ui_id>01d0c820-4d13-4ea7-9651-4b82b05dee7b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>2ebe4a2fc3fb62101aae50e1b401312e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
+        <ui_id>eaf9d31c-b714-45f6-a0a7-1e119114a155</ui_id>
+        <values>H4sIAAAAAAAA/9VUy27bMBD8lYBnWdDLju1bEcOnJgGawpc0EVbiyiZAPUpSjl1D/96lHo4R2GkKFAXiG3d3ljNDjR8PTHA2ZxMfvfHMn6ShH4aB5wXTyE8mYeIHPATEiDmsgBxp0kAiMW4PDtuCrG1xF/vXs2kw8+MCTSbFLs6DPOZCYWpKpeMcuQBNAC50JWG/ehe3OOJuB1y6EZIrLNj88clhFSi636Bi88Ob1kfVSEhQ0uh3K+eCOrOvzta+nmKv7rpGqbjl4zkMdwYLjkQkA6nRYTkUHEjPns2NqqmgEPh9IffHiY0oDC1kdnanxS+6durZuQxJWYpd73iMexu7crYAAw+0OTW16kfTTSlS1J0nHDOopbk5rXUD95URZdFBWpk9upR1Xtx1lrDjguHVqFJrIoGV1WmZ9zKyh0358m1guRRFa0nflGUK8ngCY5RIamP5HBhKzGlRnENViWIdV6rcihZMXHJ3LengZrJ8oUu1WBcupJa4S7aCu6T6oi2vQAmr4pbWELhxmN7rGwlav2ohE+OftWXSKes1xJ0NFpIqUZkvdMEWe7qNM8SEoze7+GH5yeuH1CZDvxuRIR4/as8L+eEwDlLaCjiKxlMYRUE6Hs0CLxohD3yfRxhxvHYJQl9a0zyfiY4Ny7BM14n1y22LTfOR6P1nPn8Z6T87P0R6KVByfeYphjxjTkYYjLuneZPpvnm16pt9rv1/lWt/4rW/T5TuTtynD/fJ//j5mA9FS/pyPGz3PBi2yI8uNk3z9BsvGWdYXgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:23:55</sys_created_on>
+        <sys_id>7b9b7aa3c3ff62101aae50e1b4013127</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
-        <ui_id>eaf9d31c-b714-45f6-a0a7-1e119114a155</ui_id>
-        <values>H4sIAAAAAAAA/9VUy27bMBD8lYBnWdDLju1bEcOnJgGawpc0EVbiyiZAPUpSjl1D/96lHo4R2GkKFAXiG3d3ljNDjR8PTHA2ZxMfvfHMn6ShH4aB5wXTyE8mYeIHPATEiDmsgBxp0kAiMW4PDtuCrG1xF/vXs2kw8+MCTSbFLs6DPOZCYWpKpeMcuQBNAC50JWG/ehe3OOJuB1y6EZIrLNj88clhFSi636Bi88Ob1kfVSEhQ0uh3K+eCOrOvzta+nmKv7rpGqbjl4zkMdwYLjkQkA6nRYTkUHEjPns2NqqmgEPh9IffHiY0oDC1kdnanxS+6durZuQxJWYpd73iMexu7crYAAw+0OTW16kfTTSlS1J0nHDOopbk5rXUD95URZdFBWpk9upR1Xtx1lrDjguHVqFJrIoGV1WmZ9zKyh0358m1guRRFa0nflGUK8ngCY5RIamP5HBhKzGlRnENViWIdV6rcihZMXHJ3LengZrJ8oUu1WBcupJa4S7aCu6T6oi2vQAmr4pbWELhxmN7rGwlav2ohE+OftWXSKes1xJ0NFpIqUZkvdMEWe7qNM8SEoze7+GH5yeuH1CZDvxuRIR4/as8L+eEwDlLaCjiKxlMYRUE6Hs0CLxohD3yfRxhxvHYJQl9a0zyfiY4Ny7BM14n1y22LTfOR6P1nPn8Z6T87P0R6KVByfeYphjxjTkYYjLuneZPpvnm16pt9rv1/lWt/4rW/T5TuTtynD/fJ//j5mA9FS/pyPGz3PBi2yI8uNk3z9BsvGWdYXgcAAA==</values>
+        <sys_updated_on>2025-09-11 17:23:55</sys_updated_on>
+        <ui_id>8431188e-8062-45b3-9746-338a91a74f17</ui_id>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9leDnEOwkTS9vS0NhoRdoS1+6RciSnIiVZa8k59KQf9+RZTkmcbMJpNCyj5qLdGbmHFl+XQWcBlfBRTIMQxydXZyH4WAQhqPRgOAojgcjEofxMA66gcQpg0iDY8FgOcOisOsFis4vL/qXEZLMJIIvUNpPEeWKEZMpjVJGOdaQQLnOBV6+7M0b13l3Po9MuaCKyeDq9a0b5FgBDsNUcLXach1aiMAxExD6XFWyVZhZ5vUSlT5nu22mde6dI1PUQgm7AVsYJikDDAkWmnWDFEuKoZRlbVEM0wcpNoYplwZ2DGzwQvN3OPcitHEJg6oIc756iaoWOnMyxgY/GVUQU6gqlEwzTph2/aAswYUw102bC3jIDc+kS3Flu+xMFKm8d+0I6g38xMBSaADBcluoRV6VkTxNs/mjR3nDZdmTyikygkW9wsYoHhfG4lkFTLAUNkIpznMuJyhX2YyXyYAl7U0ELHqJyOZwqOYT2cPEAu9BX3HvBuzj0vyCFbdV3ME2kAyAuACGIDdCnRWqbOUMEVHo0qGw1G6vYN0N9FJfC6z1pnJoOfpTWNyuD1XFyDXNphDFc/MDtpixqrh19yAtnYUbypFMUm5R6P2CslL4VcBudLXSRWw70iuN6/VBwtqff0qBldV5gV03y2sruZLaju22bYNKatHJpAZ1fCexweFfT2vHq8e14B8SIud7SXa24ZPOlEGulw0N7ariaJ4fAMHz/MEysxMvP0JV0TzhTNC2L8qNdWx9Ufr/5xflS5IcAFHkpsel4LJ8HgDQz2J/uP+KvdziWUmvDfdLG9ZkVwO4Y7LO+9FKOACOV8ITnN15dnhaIPr7vqTM9l3vjZUABicTwKB/GgGs6jLrRrb03L8I7TR9/LuNx9vxQMFGQrRuE9hRZ0bHntlf7wp4cJSCm2RznvEHnDvx0/EDRXY/8wqYQmp1HnL6RXNOJ8xsTvdRNDNzLH63+SvGIT+osrxPeIYO98p2FG0kCkpBimkYXvMdGsHzaPcOiXrOfNwVcgAW3447vOg81mBaEVbXCCidTcrZNO+Rn7W1IvnwhA/GL/sl9cNq1aCf2bf4ezudEN7+AkpgoEfdEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Delete Record">c3e09916c31332002841b63b12d3aedf</action_type>
+        <action_type_parent display_value="Delete Record">a8f274c8c3c232002841b63b12d3aee9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>af337dac-6bf6-4dfc-ae54-dfff98c00628</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:23:55</sys_created_on>
+        <sys_id>b79b7aa3c3ff62101aae50e1b4013128</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:23:55</sys_updated_on>
+        <ui_id>e1dee8d2-2a20-4d2b-896e-14a87d28f62e</ui_id>
+        <values>H4sIAAAAAAAA/42SQW+jMBCF/8rKZ4IgZNkkt1WjSpW6W6mVeqkqNNjjxJKxWdukZVH++46B0KqnPc7zPPt7D14GpgTbs6zGbLfLS17kRbHOsvV2k9dlUedrUQBizhJmoEHadMitEzSfQXdRGAaQRfFDAF+VtSxXGyH5CvD7ZiWklLstz7JyvU1VwOZyIZ9QvtXQP892UvhJaeHQsP3La8JacPRSQMf2w5ej/0XVUKOm1ccr61f20LdxFpZ3DZpQqat4PzsP88m3uwOdkCniZAnD94BGIHFI0B4T1oAREKzr2T64jgSHIB6M7peNkzJhytnAu1d/6eFNFvckUjA+d7CM1dzPJMsDBHiim3no3FKXVRz9VIlACZ0ON5+1aeGhDcqayRKg1le31V1jfk+FsOWCT5+j8wSBbcwZyadY8ulk3x6vkLfKjI3MEbXloJcJQnCq7kLEGRhqHCtuoG2VOVats2c1mgmlSY+ahlRq+0ZvenU0KfDInVKrkN6SfhjlZ3AqhvhF15D5kjDf+xsN3n9EoQ6rP10kmYLNEaqxhbGCavwRopk71Yaf9NQZZ/DL6z8w/KxmDQMAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -808,21 +974,73 @@
         <display_text/>
         <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
         <generation_source/>
-        <order>3</order>
+        <order>8</order>
         <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>e6be4a2fc3fb62101aae50e1b401312d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>ae8d137d-2f24-4750-957a-773943a1fa88</ui_id>
         <values>H4sIAAAAAAAA/+VY32+jOBD+VxDPSc4kJEDfTo0irbS3lba9fdlbWQabxjrHsMb0V5T//cYYSJTQJOymUqt79HhsfzPzfYPN97XLqXvl0ghFaRRNwwChyQSh2WySEC+OJ7MkRjHx3YEryYqBpyaxYDB8IKI04yfsBVE4jjwsmU4Ff8KUK5boTIET5UUuyPO32ne+nUmWXFDFpHv1/cfAzYmC3TVT7tV6b+pceILETIDrXY1vD65+ztshruas7fPuMueLncgUNVDQwGVPmknKAENKRMEG7opISiCE59aiGKE3UmwNSy417Oga56eCv8C5ITJ+KYOoEmbn2iGuk2TN6ZxocqtVmehS1a7JMuMJK2w+KEtJKfT1rs063OSaZ9IusWHb1ZkoV/KLTYfbbtDUBCxlASBYbgI1yOsw0ttl9vi1QbngsspJPSmyhIh2RLRWPC61wbN2mWAr2AivSJ5zeY9zlT3wajFgWY3uBQxGqcge4dCC38sRSQzwEeSVjBZgn1fmb0RxE8VfsA0zlEm5AIZgW8IiK1WVygeciLKoJhSRhd3L3Qzc4rm4FqQotpFDyvHP0uC2eagjxjZpZkmieK7/hC0eWB3cZtAoZHqUgtGWckkmKTcoih2ZmLl/SlhK1+vIpwFB03CIWBwMfZTQIUEoGKIpmvpeNAtmNBxxzVabzaGGfn2jnpI7HW8juevdgLuSUIvvwPa5a4NafN7FxOcj9JHkB4e/P/X115NNwQlRefQoyeiWT0WmNLa53FHVoTx68/wMCA3Pbwwznfj5NVQ1zVPOBO36xizMxN43Zvz//Ma8S5IDIIpt9bgUXFYXBgD6VuyfHqVe7O3xrKLXlvuVjRTJoQaIozPnpbcSzoDTKOEWznbuLJ4OiE2/ryiz3+sbYy2AycUEMBlfRgDrNsw2kR05b+6IppqN/4vxJ/v+QMGdBd6mS2C9zvT6njneHAp40kvBu2SzM/NXOHfhy+Qrihy8ZQtYwtL6PGz1ix85vWd6e3rjRTP9SMS/XfM143BTqCq8N7iYekffRvHOxZSneAWV4zncn+EhBuQoMFEMp1kpKa5vzlsimUqmXBW6dj5sNF8Z6Ec6GQjT0UvmVN5O693zQ3w6jiaVn1KnCaQ+rXAgEKcKxGkD6Rd2n6blX/ByeummtSBcVNWAR1G+U06mVPXy7mpcJwp5hBFndrUzQXkXBfX7ba9LAp3t7wTWD/HCvnxrShiJ/TGZBRPPQ8hDNEBhEHjhLE5nJPDTrUYxLmQC3RR2ToEqsD1uqNHU2TvsP3Wz7ddnzgDVMHCeSfPUHgfaMaigvE6D6jTuup/EWSYYkXsN5Q6Q/7GovggtXafvrql8iN9NJb/bz7Q1deb6ra4NJf9b8p8l+2QoFjI0Dj2aDMPAC4Z+SmfDiJLpkETxNJhQlvjpJW8CP/4DtNXF08YVAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e2be4a2fc3fb62101aae50e1b401310f"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e2be4a2fc3fb62101aae50e1b401310f^sys_idNOT IN66be4a2fc3fb62101aae50e1b401312b,e6be4a2fc3fb62101aae50e1b4013129,e6be4a2fc3fb62101aae50e1b401312a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e2be4a2fc3fb62101aae50e1b401310f^sys_idNOT IN3b9b7aa3c3ff62101aae50e1b401312a,460cb2e3c3ff62101aae50e1b401313c,66be4a2fc3fb62101aae50e1b401312b,860cb2e3c3ff62101aae50e1b401313d,e6be4a2fc3fb62101aae50e1b4013129,e6be4a2fc3fb62101aae50e1b401312a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a69b3aa3c3ff62101aae50e1b4013132</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:23:55</sys_created_on>
+        <sys_id>3b9b7aa3c3ff62101aae50e1b401312a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
+        <ui_id>af337dac-6bf6-4dfc-ae54-dfff98c00628</ui_id>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L35OEB8pgbxVrSpV6l2ltOrLqYoWe0msMzZnm6Qcyn+/dSC06uM9wY53Z2cGMzDT+bbz7tXcOif3mm1+vS+Y1AGj94FpaJBtmPTYOLZgR1BdqIehWGVJUhS4LOI8Xa5uqmxZrlf5MssKKBNYr+pkHW2RGyvc+UyjQrpWQf/2/wz8IJWwOIlswZI2j5Zthm9HUtCCpBR1mcQlz9I8S+M4LVZJlWdVkooMUOREqKBCRa2Pk7tvZn3fhtKOEibgaZrZzig9gog0XjD88KgF0voalMMFa0AL8Mb2bONtR4BFEM9a9XPHQWpPdCz0fjj5lzYmcRwaayRDHMfDudxNOY5wfQ8eXoia+85OrfxgJEc3RiGwhk75u6/Y2PDcemn0OOKhUtdpo7pG/xyTYDPB9bMR0jkSgW0wGqRPPuqXgzltryofpL6EMh0qw0HNFXhvZdX5oGdgqLAhol0DbSv1ftdac5SXYdLSRHtFRVQrc6Kl4YpGwIPwiHKF6IHw+wv8BlYGFz+IhobPC+Z6d6fAuU8vFOLuTxeUjM4mD7sxhjDCrWz9LS044iT3/B5u/cg9Z8qlIwmvAXu8/ivhoKcbJPlX6GTs7yD+Ezv/Aw1sRLx1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">610c72e3c3ff62101aae50e1b40131c2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:25:42</sys_created_on>
+        <sys_id>460cb2e3c3ff62101aae50e1b401313c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
+        <ui_id>824ba031-52bc-4258-a7b2-71c691dd856a</ui_id>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPURaSgta+TAhUaVJXpLbqy9ZFN7YD1hw7sx1oFvHfd50PQCvbqLrHveFzr+8958RHNERXrqycfdAza8VKkavPTwERymP4uyGCkSuSR5CPL+mYJvE0iaMofn8xzqZJNo5ZAhwSEhAFBcdOqhUTTmiVtkBANiArX1gIw6nTxo6EHfGidPVIm5FQWBfsAzYyYUsJ9eO5/XQtJDO8Z1yCwX2OG3LV/FI6V4GEjEtsnQ8SRjct8nttri49bp0RatWfb/op9wOoDfOsxlFA+LPjinHkk4O0PCAFKAYost4jhgNbKnkA1kI5HEd887MVP3BhPJn4xpyjRMq74v6Y9j52cL4AB0iloq4yfStda0G57cxhPIdKuvkx1jUsSy+1u+Igk8NtLatC3XaOkP2A4bMhUlkkwUuv1FPvdeT3a729G1heC9W60helpiD3J3DoXVY5z6chXPICB6UFlCU6mpZGb0R7GbkU4QqfAw9zqbe41L/gEKgnHqKxEF4jvmjhRzDCq/iEY/ByRzMDK2javnYchzZxsguIre1cgrUHkehu+r3yFDvJvbi088dfoUaUboabN7zXsQv68FzCJJ+Mo8npp3cxPfHAjnLTNLbKvLyQDYnY7b5UUZSwr8u7P1Rv381epuqN016XuTOEv8jcaTNeE7T4L0HzX/nMnEVR9D9obw6asGkXj15bu/wf5uzJh6XbufeaCovUHjz2cfgv84UaH5egx9BWm29e1AHb/QTJ65b9FQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">77d2c6afc3bb62101aae50e1b401312b</block>
@@ -834,18 +1052,44 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>7</order>
+        <order>12</order>
         <outputs_assigned/>
         <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>66be4a2fc3fb62101aae50e1b401312b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>53731ac4-a8d8-48bf-90fa-ed7b52007ed1</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a10c72e3c3ff62101aae50e1b40131c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create / Update Directors">e2be4a2fc3fb62101aae50e1b401310f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>824ba031-52bc-4258-a7b2-71c691dd856a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 17:25:42</sys_created_on>
+        <sys_id>860cb2e3c3ff62101aae50e1b401313d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
+        <ui_id>07494011-392e-4fb1-ad51-3ba2b1627d38</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
@@ -860,17 +1104,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>2</order>
+        <order>7</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>e6be4a2fc3fb62101aae50e1b4013129</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</ui_id>
         <values>H4sIAAAAAAAA/51Ty07kMBD8F58zUR5s2JkbAiEh7YIEiMsKRR27M2OtYwfbmSEb5d+3PXmAOHJKutxdXVVxBmY633bePZsr5+Res92f14hJHTB6H5iGBtmOSY+NYxE7gupCPQw83XL8UWWbvC5wc1FkuIE0vdxkPL3kGc+zrKhjsBb6caRBIV2roH/57jw/SCUszgJbsKTLo2W74cuRFESfbkW9TZMt0RR5liTZz4u0KvIqzUQOKAoiVFChota72dkXo75vQ2mRGysW4Nc887ii9AgisiRi+O5RC6T1NSiHEWtAC/DG9mznbUeARRAPWvVrx0FqT3Qs9L47+Y82pkkSGmskQxynw7Us5xQnuL4BD09EzX1n51Z+MJKjm6IQWEOn/PVnbGp4aL00ehrxUKll2qiu0fdTEmwlWD4aIZ0jEdgGo0H67KN+OpjT46LyVupzKPOhMhzUWoH3VladD3oGhgobIiobaFup92VrzVGeh0lLE+8VFXGtzImWhusZAw/CY8oV4lvCb87wC1gZXPwmGhoeI+Z6d63AuQ8vFGL51gUlk7PZQznFEEa4la2/ogVHnOWOr+HGT9xrplw6kvAcsLvlPwkHPd0gyT9DJ2P/BvEf2PgfvZy5CHEDAAA=</values>
         <workflow_reference/>
@@ -886,17 +1130,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
+        <order>9</order>
         <outputs_assigned/>
         <parent_ui_id>94d7a058-0eb7-40cd-a007-0505419676d8</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:46</sys_created_on>
         <sys_id>e6be4a2fc3fb62101aae50e1b401312a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:46</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:42</sys_updated_on>
         <ui_id>01d0c820-4d13-4ea7-9651-4b82b05dee7b</ui_id>
         <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBn2dBiebsUgY0ABdIGaIJc2kAYk5RNlCZVLnZcwf/eoSQvaNwlbY+9mW+290bz4Jpo7yrv7IO+tlYsFZl+fIqIUAHD3zVRsOZkSqhWTDihVdEAEdmA9CEwF4ZTp82V0u6q1F6xNxhlwlYSdo8/TaIrIZnh3cwKDHZ23JBp/V1IMOxRxlAmE5rQLB1maRyn40GyGGaLJGUZcMiwoYQFl5g6O5C9um2Q6Icq3K4KuHVGqGX3vu263B9AbVhglcQR4c+OK8aRTwnS8oisQTFAZbsjYjiwOyVPwEooh+1ISH624isOTPM8JJYcJVLeBo/PolteC5dzcIBUPHXedKl0pQXltl0O4yV46WbnWJtwVwWpbYmDhTxUa+nX6n27EXJscPhWiHiLJHgVlAbqnY7yfqW3Hw4sb4RqttIFpaYgjy9wuLuFd4FPTbjka2xUrKGqcKNFZfRGNMXIZd1fSnz0S6m3ODTcYB9oIN7HxUL/BvF5Az+CEUHFO2yDxS3NBVhBi+ZesR2uiZN9ROzOziRYexKJ2y2++ECxldyJK9r9hBJqROWucfKGdzr20cvzP7v8ugY+Zkk2Yr20TAe9wSiPe5N8BL3RKJsMMkhKGI/71oHzdr//5OM4Y8lLc/xxn9f5ZwJ5mSdxftk/g+El/1xwzitNk/7CNOGL/aZn4jj+b5q/No2wRXvqnbZm+D/0zFMwSDvzuGsqLFJ7CNjbwz9LCOzwuAQ9h7bafA6iTtj+G+LPMJijBgAA</values>
         <workflow_reference/>
@@ -963,16 +1207,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"fabe4a2fc3fb62101aae50e1b4013160","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Create / Update Directors">fabe7d67c3bb62101aae50e1b4013160</plan_id>
-        <snapshot>306f0e6fc3fb62101aae50e1b401310f</snapshot>
+        <snapshot>c05c3ae3c3ff62101aae50e1b40131f2</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-11 14:07:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fabe4a2fc3fb62101aae50e1b4013160</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-11 14:07:47</sys_updated_on>
+        <sys_updated_on>2025-09-11 17:25:43</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
