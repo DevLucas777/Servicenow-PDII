@@ -28,7 +28,7 @@
                 <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Media not Found" sequence="4" value="7"/>
                 <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
-                <element inactive_on_update="false" label="Integration Sucess" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="2" value="3"/>
             </choice>
         </element>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
