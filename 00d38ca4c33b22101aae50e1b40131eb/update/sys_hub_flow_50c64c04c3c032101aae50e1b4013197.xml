@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=243216000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>netflix__suggestion_movie</internal_name>
+        <label_cache>[{"name":"Created_1.current.type","label":"Trigger - Record Created➛Suggestion Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_1798291_netflix_suggestion","column_name":"type","choices":[{"label":"-- None --","image":"","reference":false,"used":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","reference":false,"used":false,"label":"Movie","rawLabel":"Movie","selected":false,"missing":false,"value":"movie","parameters":{"name":"x_1798291_netflix_suggestion","dependent_values":[""]}},{"image":"","reference":false,"used":false,"label":"Episodes","rawLabel":"Episodes","selected":false,"missing":false,"value":"episodes","parameters":{"name":"x_1798291_netflix_suggestion","dependent_values":[""]}},{"image":"","reference":false,"used":false,"label":"Series","rawLabel":"Series","selected":false,"missing":false,"value":"series","parameters":{"name":"x_1798291_netflix_suggestion","dependent_values":[""]}}],"usedInstances":{"b4ac93ac-362e-4db5-b5d6-9b50604a13e0":["type"],"0c30a786-007c-4012-95a3-4987225f5744":["type"]}},{"name":"Created_1.current.release_year","label":"Trigger - Record Created➛Suggestion Record➛Release Year","reference":"","reference_display":"Release Year","type":"string","base_type":"string","parent_table_name":"x_1798291_netflix_suggestion","column_name":"release_year","usedInstances":{"b4ac93ac-362e-4db5-b5d6-9b50604a13e0":["release_year"],"0c30a786-007c-4012-95a3-4987225f5744":["release_year"]}},{"name":"Created_1.current.title","label":"Trigger - Record Created➛Suggestion Record➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"x_1798291_netflix_suggestion","column_name":"title","usedInstances":{"b4ac93ac-362e-4db5-b5d6-9b50604a13e0":["title"],"0c30a786-007c-4012-95a3-4987225f5744":["title"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Suggestion Record","reference":"x_1798291_netflix_suggestion","reference_display":"Suggestion","type":"reference","base_type":"reference","usedInstances":{"de0c15fe-0fc5-4c63-94cc-3dd91c62580e":["record"],"150c84fb-0644-41ec-a797-470c0678e29f":["record"],"911eb05e-e175-44be-98aa-5c0d8014aa4a":["record"],"77a7037d-6561-4bbc-b273-104413c5ba18":["record"],"9e7dab1b-0b30-40f9-92fc-da9a06dbb96d":["record"],"0c30a786-007c-4012-95a3-4987225f5744":["title"],"543b071d-b32b-4715-90e9-070a295f6aa0":["record"],"3f8b7fed-8f5c-4c3b-b168-f3a6218e168f":["record"],"8923cc55-f813-41ad-93a7-3b1bae156af9":["conditions"]},"attributes":{}},{"name":"{{static.83da731cc3f722101aae50e1b4013198}}","label":"Netflix - Administrator","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"150c84fb-0644-41ec-a797-470c0678e29f":["approval_conditions"],"9694944a-b5ba-4921-8dd1-2f5ab0d88d0b":["approval_conditions"]}},{"name":"de0c15fe-0fc5-4c63-94cc-3dd91c62580e.record","label":"1 - Update Record➛Suggestion Record","reference":"x_1798291_netflix_suggestion","reference_display":"Suggestion","type":"reference","base_type":"reference","usedInstances":{"9694944a-b5ba-4921-8dd1-2f5ab0d88d0b":["record"],"ce1a273b-88e2-4582-b262-919bee48c3ac":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9694944a-b5ba-4921-8dd1-2f5ab0d88d0b.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"8723ee9b-7866-4ef2-9904-1efc97f5d60c":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Suggestion Table","reference":"x_1798291_netflix_suggestion","reference_display":"Suggestion","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>e1f9840cc3c032101aae50e1b40131d7</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Netflix - Suggestion Movie </name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3df9c40cc3c032101aae50e1b4013196</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:30:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>50c64c04c3c032101aae50e1b4013197</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Netflix - Suggestion Movie </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name>sys_hub_flow_50c64c04c3c032101aae50e1b4013197</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:18</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_variable_value action="delete_multiple" query="document_key=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1798291_netflix_suggestion">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3df9c40cc3c032101aae50e1b4013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:44:41</sys_updated_on>
+        <table>x_1798291_netflix_suggestion</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>50c64c04c3c032101aae50e1b4013197</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 13:04:18</sys_created_on>
+        <sys_id>8896eaf0c34032101aae50e1b4013190</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:18</sys_updated_on>
+        <trigger display_value="">3df9c40cc3c032101aae50e1b4013196</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=50c64c04c3c032101aae50e1b4013197^sys_idNOT IN8896eaf0c34032101aae50e1b4013190"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=50c64c04c3c032101aae50e1b4013197^sys_idNOT IN94c64c04c3c032101aae50e1b4013199"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>50c64c04c3c032101aae50e1b4013197</id>
+        <name>Netflix - Suggestion Movie </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:30:39</sys_created_on>
+        <sys_id>94c64c04c3c032101aae50e1b4013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:30:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=94c64c04c3c032101aae50e1b4013199"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=50c64c04c3c032101aae50e1b4013197^sys_idNOT IN6d074c08c3c032101aae50e1b4013187,a5074c08c3c032101aae50e1b401317e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</model>
+        <model_id>50c64c04c3c032101aae50e1b4013197</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_50c64c04c3c032101aae50e1b4013197</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:31:50</sys_created_on>
+        <sys_id>6d074c08c3c032101aae50e1b4013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:31:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d074c08c3c032101aae50e1b4013187"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</model>
+        <model_id>50c64c04c3c032101aae50e1b4013197</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_50c64c04c3c032101aae50e1b4013197</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:31:50</sys_created_on>
+        <sys_id>a5074c08c3c032101aae50e1b401317e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:31:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a5074c08c3c032101aae50e1b401317e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=50c64c04c3c032101aae50e1b4013197^sys_idNOT INed074c08c3c032101aae50e1b40131ca"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:31:50</sys_created_on>
+        <sys_id>ed074c08c3c032101aae50e1b40131ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:36:37</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACutixlbetk0UDbDeonW0fglSgpKFNlKZciVLiLvLvHepiy7r4nk3yEsAkxTlzeOYMmYfvOicecP1KvyceB/1CZ0JCJAi/Xy4Ah6UadgWZq7k5EQGRYbTUr2SUwIUeRgFE+pV5oaeEJzBZxrcBfoRLsy+Kz/ViGn8/u+bAGVqO6QqQlLNnN06mU4glCwUuC1i84GT5Z7F6Up3zZ4wHEQj96uHxQl+QCCNIFf17bYopCD71iWOB4dumbVmGYQ17pndpe6YV2AQMAzesZ16DLFsIWOcLzxJEABiKEh5DCzcRkOBO8OVqxQypzcmZk+eY/Ye7Dw21jgJi9yGfW/10CzLyYX8WMh/uFhkZ2UiOM58MeTIXX3P8ikagJOGypBFHkhj3g4WCrEAUiOhkFj6Ny4CfmciyKyZ56BO++kWkjJiXSIgV4ZRxpN7NuYnDJMrQj29Gd+Nr969P96Pfbsbu+GZyP74d3d9c6y9ZXu6/idoxR1hgcfN0XlZn/5kBVwcomcyOIfYjtpCffMlSKNC8XKxlOwpFwAqF1KTrl1PxpnSLjMqzNIxO9fqVzUsF/33zR1Oo+eBhCr28JCQA0qFQj1YUWk2yBZpsybea3TatFiP7iLVnGG8k17ygjlbrPAyAX6+303ESjSVymVgkUrH1RISMXRm6JAjcCo9qKWLaJd88t5edYo0SgR+4q/NoSjajbcXfFxYj3Aest5KbbEucp1+KLceJ0EI8OPyj+UmE1EitdDB6OyfTglE6AQ6+rIiAfourv35ncczEtIJ6FTTjoBFzFQ7FpJUp5bHjE4M/HlmvTX7TGm+1uj24aE2TUg+oZQxUyZqG7VHTGBh9QgPbMHyrUrRNMJ0oZe30X6V4DyvdONMd30NldYoL8EZV+HspJt2UW0mCUkPhEKPzQDPPBM1S0GpOZx9kdStZ5sPXm+rcltqZGzoJUoJfBPs63p5mR3n4hC57hNF5xP9nGoWJCOrOo/bUmNDWK7SfCv5+PqPp0TCC7QA2V7yR3a0ZLjVKxPIMRmdT03OgBwb6m43W5vUdx/OJRengcgCWWTO6NYxWbB/C4HYIK21TZpfZtWokbZPWATZ3AsCG5R0M8HSzK4TZanX53McwtacZCBehRi5XttXwtilnAZRzRxd2I0q6LuVTi5sOHb9vDgb+AJ8dWNy0Bx4xe1afOINLe9ivFXcDyjaYsoWEH/IYiZdxBqSj8L/lU+/rHf2aCo1BStVkDu+9Am+n2TckD1Lpf+pYtMw/wkj7GopfbtfrtAlgW8tepOdqwvugUAervS4ML5Szxi0AQ/+K4xuh1e2xg5W3fBPV9JBupnXymwh6w75D7XY3oU6bm6zBdMN895eGPYsh7SyrttvDvtpOW0uks90fodaaTKr3gC0XlXORYp6dFOv1SLFPvhyVtdj5EDwG7AfqVtkV4pSWpWKCG9KqT1+HGk5oGERjVCv+64fvem+pyRkgpRxvwRhQU9FPNehqw2hCWSn4xwLJ79WNxoXDWnFXetOeVDv18z5hIRiQft/uuOU69SdsG6AdeN99hzq4ANK2etrapg7bt75na6OqqHNTEXu2oLNm3d6HTsu6tRPtyvr0HrPtAd6C4p12j8f/AXWlKR21HgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=50c64c04c3c032101aae50e1b4013197^sys_idNOT IN2c38188cc30432101aae50e1b4013158,3157144cc30432101aae50e1b4013131,3d57144cc30432101aae50e1b401312d,47fe2448c38432101aae50e1b4013127,5e9f2088c38432101aae50e1b40131d8,8bfe2448c38432101aae50e1b4013122,b157144cc30432101aae50e1b4013132,ef18c088c3c032101aae50e1b4013138"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Creating a new record in the media table</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:46:51</sys_created_on>
+        <sys_id>2c38188cc30432101aae50e1b4013158</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:06</sys_updated_on>
+        <ui_id>0c30a786-007c-4012-95a3-4987225f5744</ui_id>
+        <values>H4sIAAAAAAAA/9VUXWvbMBT9K0VPLXjGjrssyZ5GR57WFtbRl64VsnXtCGTZk+V8LPi/78qS0zRNoIxBWZ6so6tzz/04edgSwcmMjGOIPk7jcZbESTKKotHkMk7HSRqPeMIALklAFCsBIw1LJdD+EJAlk60F1zT+NJ2MpjFVYHIp1rQELhhGcNHUkm3ufeC1h7OFkFyDIrOHx4DUTCOfAU1m24Mrs6mBSpaCxNc/bO6zG5f7rbpfPD5Rh81yiFWaW0FRQGBtQHHAfDmTDQSkZIozU+kNmRndIqCB8VslN7uIhVAGCYmNXTfiN7JPIhuXA5aWgbvbHalvk4OzRSUyuK2NqJRDemH+spJtqW5cEbbBkLNWmqHBiLQN8kFtJVsRXlF+t6hW34eEc6H66vylrDImdydmjBZpa6Cx8wAJJRLRktW1UAWtdbUU/WPUUoaFxEOYy2qFSRtRqJBlVniIHWLhHPGvPXzPtLBVXCMNPu766umv1uZ1dXjF1BWNAU2mRW2+IN0SvLguGBaWQzQ9Ofg4fR50v6PN3rIaYST8bKMo4dvtFY7OAKdxmLUaW2PC/rrrnuxOuKicf3BSgD9pbAfDBm+A6dMc+1Fd99oG7yHhLy0HJQo3cOakB2/u/kAwFyB5c2Qcg+d8Arr0Cbzv4n/lu3gc9b/3cZ/T+Z+Zb+9/8JUNXUEOswr7XbUfR9yKcWwJfNedbpj6YfRLUpJz2heAnSgK0M++wMehqe4QV8X5BX5+q1agr3DPzy8+k4N0R52FDOiGruse/wC5y7LY+wYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Updating status to Reproved</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:07</sys_created_on>
+        <sys_id>3157144cc30432101aae50e1b4013131</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:06</sys_updated_on>
+        <ui_id>ce1a273b-88e2-4582-b262-919bee48c3ac</ui_id>
+        <values>H4sIAAAAAAAA/+1WXW/aMBT9KyhPnQRRQoABe5rUVdqktVI79aV0lrFvwJtjZ7ZDYYj/vus4UEo/1lWVpknjzde+555zfGRytY4Ej8ZRD3iSjtIBy9Is6yZJd9hLp4NsmnZ5RgHSqB0pWgCeNMC04bheUFn5wnrNIWFpP4dOkrN+p8cGWWfUY6yTcT5K2aDbHyYQh77NBju5sKWkq8sGACtsLiQ3oKLx1XU7KqnBWQ5MNF4fbLlVCUTSKUhsPNasKkC51sdjxHiujm33+VbIoTA/A9e8QSfCF3HL80mTdgRLB4oDjsuptNCOCqo4ddqsorEzFRYMUH6m5Gp3Yi6UC0oLurTiJ+L3En8uB5TGGhd2S9I4tDVHCwZnpRNahYqjU7l1TsuqUKdBgvcWclpJt+dtZREPSk/ZkwgM84u5vjnfzjsRqlbXsJWaUblbUeeMmFYOrL8OkFCbUtCyFGpGSqMXom5GKkU8k7iIc6lvcKYVMxVT5nnHaBCNT7B+XJcvqRFexGeEweZNLZ78qPzcIKMhTGrNtWBSXxQetcyI0r1H4AU0NDftJsjT/lMBYKPb+97DvA3zkqRvR8PuKCUKXC7FkthqNgNbe38vuRf7ey/L8BfPonUaWDxXwZ3mRxQ1Kb5Ta0Lcf7UQD/9SiBtG/1iKf5fdpPvk47V303Vc7V5uraMOJlWSZLz31YDXQyXBK7RahXLOO2E28PtB/tP2F2YdChzqoBXGtp+tegtwIkBy+4AN27A3A8iiGbB7tV8t8ekgqX//H+9XebyDoFDzDA+y50tPNWACTOugpxUC28o5qXmTPiFS6++kKkn4j2++RWLU7O2w8QzcJ10ZReUH5czqKH3zbqIegT0ox3jXwh1NoslETaIH+mI7F7k7CjsOh9xD+KaFugVA/yxdAN+FYLPZXP8CbG3V26cJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:07</sys_created_on>
+        <sys_id>3d57144cc30432101aae50e1b401312d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 18:50:46</sys_updated_on>
+        <ui_id>9694944a-b5ba-4921-8dd1-2f5ab0d88d0b</ui_id>
+        <values>H4sIAAAAAAAA/+1X30/bMBD+V1CeS+c0LU37hoSYNmmbBGgvFEWufWk9uU4WO0AX9X/fOXHS0LKsQpXYEI93vh/f3X3nOLeFJ7g39cZhPIDJZEDmPiEBIeGIkTCAeTA+GweUEa/nKboCtMyAJRlH+Z7K3CqKggNh/iiGUxKz0emQnQWnkyFjpwHnE5+dDUYhgX7lt9mgJxc6lXT93QVADVsKyTNQ3vT2ruelNMNcBjJvWuwcmXUKkaRzkOh4kbB8BcqcfLrAGIfWUXtf1YXsFmZzoMxd9EhYJR5ZPKTnwaMBxQGzxVRq6Hkrqjg1Sbb2pibLUZEB5d+UXDcWS6FMVeiKPmrxC8MHA2sXA1bGXBMaMXINqnuTCAbfUiMSVWkMncu6cYnMV+prVYFtLcQ0l6bV2lxjPEgtZAuiQhhfL5OHqzrfpVBlcQ6tTBiVjUSNycQ8N6DtNEBC2ZMVTVOhFlGaJfeidEYoq/5CotCPZfKAObVYqD5lFncfG0T7l6i/KNXfaSZsEV8wDDpvyuKjn7nNW5XhAEdlzVXBaKVZJlJzjjHvwSHc9ByF56xz9Gw76SrclsGPkT+ehIOJHykwsRSPkc4XC9Blx/foet0+exlxbyyAk3JqvYPBP3HeL8axthQjVYV2pPW7Ses0h7A2JK/DWofoP6Pt3xhL/K6h83A7ZMyHiKmMYgGyffnWB/s0bZ28jKSXNtUTkh6At3Y+d9lPLh3gPxXiaFuKO7QdHJG25JWI+3avW9ZJBgi2M/+R5Jnq4G60FLoc6R853LI4FpcPgF87f67w71J5t6wOJgfvTP6HmTwcdVIBnrm9WKK4sPh0i8/VnQf6Cn4AM/pcrT/eFoU21AjWDwNOx4HPWBCPBwOf+JTCiIA/HxI/8CfhZnO3z/8jRHzZvjTX91UuQdc7c0Cjmse18+tsnNuY5jBzTm5rhsd6a7/e0rzNdwvr5EE82c6d59gOatqP7WLmVSBn3nTmqUTBzOvNPGsVWUKUarRAcM1BqSuKzabS5Bl1AfyWuPXmdK1LS82WwJFUpfaJpmK60x/zn/TaJTi5QNwfbkTri/P3rjU/tnnl/2wj3dY0lVSdE+3vzeho35vh++K0Fgdhiqh5WOPnBa+gF2/T3W/oLBkZfBEAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Sending email informing that the review was approved</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 20:26:26</sys_created_on>
+        <sys_id>47fe2448c38432101aae50e1b4013127</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:07</sys_updated_on>
+        <ui_id>3f8b7fed-8f5c-4c3b-b168-f3a6218e168f</ui_id>
+        <values>H4sIAAAAAAAA/8VWXU/jMBD8KyjPTRUnaZPwhg4hId2BBBwvJ2Q59rpYcj5InNJexX+/dZKWptCCOI579Nq7npndifNr5SjhHDuhiIVIJPEkIcQj3oT4JIYYUh5NI/BjZ+TkLAM8WQEvKoHrOdONDaxW3ypgBgQlY95UFeTm6Qn3hapLzZa3/TGM8HulBe47x7/uRk7JKqxooHKOVztbZlkC1SwFjYmnBW8yLHp0foo13ot2nX21hrsL396Ba9FXp8oGccviISMHFgZyAXibZLqGkZOxXDBTVMtNBFmLy1w/B+5VbjqmGVvU6jfWD3x7TgJS470KmyXtFVqLUygOl6VRRd5FDEv1WrlCN1l+0VGw2oJkjTZb2jY11oPSYrYgTNUgIHl9Xzxere87U3nLrkerC870ZsWMqVTaGKhtOxp185o8Xfj7q40BDe3BjJWlyme0rIq5au9D9Nl4pnExlrp4RJi1muVjxi3VMYrKxmcYP23Dt6xSlvcPLIPJ9s6fuXpo4Nw2XhAvChKPu5E/CdzQ48xNY5G6LPXlJAyn8TQlzlOrMX1oLL1OrV4X2krb6krbecCjNa9UaU4QzBx6NZ5GvSticmjOAv95rLZqPjtjQUmUxH5CaA5GarWgdTObQd22+IVBrrf3PmaVG4vi6KJD8V4Gg+Q9jHqzDGK9V/xP80rs/R+v9Ij+3iwDeYZeGXTmS6zC0zSVKSQuSTl3wwhiN/ZZ5MLE44H0A8+L5JtWecsg4eHx2no28sIoqTjr53ttkSghfOqFIQ/iMPCxBGMIEEgaeiQgYXLIJkcnpVUOxIf9sun25mF5m88692JI6HWavW+qrXt62wSHbdN9vz/ywtTLGua2gZAxpWk3OnustMNhv632FR14jUkJ3P4HSAVa4ADRNucLnquB6uhDrPbCgdu9/ncGvHnZ8BoM7QWgtgCVRZUx28aWy65vw4RAFPixm0x99C0EEzcVQeAS9DEAA+mLz3ji7v4AMPFp9/oJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 20:29:06</sys_created_on>
+        <sys_id>5e9f2088c38432101aae50e1b40131d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:06</sys_updated_on>
+        <ui_id>8923cc55-f813-41ad-93a7-3b1bae156af9</ui_id>
+        <values>H4sIAAAAAAAA/9VY32/bOAz+Vww/pzk7v5z0bWgRYMDdCmy9vfR6gizJje4UyZPkdm2Q/32UZTtp4qRpmmHdW0RR5EfyIyXnZhFyGp6HdBJNsslkOE6iqN+PotGoT3Ccpv0RSaMUD8JOKPGcgabFqWCwvMeicGvzaHCeawVr5H8wDduUm1zgx6+V1odKBXbIjAuqmQzPb247YY412LVw5nyxsWUfc4YETpkAA9fObfDJYegcDPnZ4e0QnIN6iaQ3rTR1WKJOyL5bJikDVxkWhnXCOZYUW6UfG4lmmF5JsRLMuLRgMXTK3w1/AvPjyOllDMIizO81S1RlyYvJTHHCrnLLlfQSD9RvKlHM5ScfgMsvy3AhbJ1fkBQG7LHcYXYgKkTZl5l6+Fw7nHJZhldtCkWgJPUKW6t5WlhmXC2YYHMwhOZQVC7vkKsfLw8Dlnn3TsCimwn1AE4Nv5NdTBzwLqQId6cgvyzFX7HmLoq/wExJjIwLqDbySTeq0GVW7hERhSk3NJbG2wqXZa7Qt8Kh9FFX8SGfIlAwRPPcfoAD96wJxQtdGFUKF216y+WyU/N/uJdMkxV5iJKUO3SmvQn+KcACXSwugByWURR3SaEh+Xa5/NdYEHkFzf5jBPa3W+VNto5rrov1mA7NR+vhtiRVbfZMVrVZfLI2G0TRL2o0q4v312cvdY4PuL19mqaI6V4S0FW9jdIW+cytdcU2t49m6JQzQZ+N/wPA1YevHNmC9HEX3oqgmfOxcQ/0fvt74F3SEwBR5PPNpeCyvIYB6Gl4O9xLjTTe4EFZ/rVZ7mTYkG324sCq4On4KVvWtebvASDrg18AUXDtUbYAr+drbb6ibv9k1O33XkddIM7NokHfZK0lwfVry5Wu1n9y+nhTH9i1diBe3jbUvzjOZ/xanz3nc6M3+69qznVm+Z3LHQQ78VtuR7N1fmZ3z+Bo5Q/5ZkUPnN4xu/Jea1FlH7D4v22/YlfTQ2V4x74LVxfb3k+HdO21xzM0hzrxHB6rmhGggkFYM5SpQlJUPVNXtHF1y7g2tlLeniGfmS20DBS0XGBnLCi1g0b7FJPlgOjqgx+zoA6vwmACCC8owwua8F6XjB3zaHDCt95b5tEUc1GmHj438rXaMa2V3jGTXqjanvIfOLAOBBWfFNTbJ1ob31sn2wtYf4tv17dOHcJwOujhUdKP4yiKI5pE4ySJx6M0G+FkkK0aDSEjCYxFsJwBMcA8qolQVzXaHi1+Nh79BwvM3D+mlYlD8daHL5V0n6K9xAYOMNQ5qAG/HFI1L1KlBMNyRc/hLxsY7+U/mIJfb+bGi/5sK9rPuswL/rfk3wr20ZFizKLeOKbkbJzEydkgo6OzCcXDMzxJh0mfMjLIjr+fb38AM32Oj48UAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Sending email with reason for rejection</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 20:26:26</sys_created_on>
+        <sys_id>8bfe2448c38432101aae50e1b4013122</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:06</sys_updated_on>
+        <ui_id>543b071d-b32b-4715-90e9-070a295f6aa0</ui_id>
+        <values>H4sIAAAAAAAA/8WW3U7jMBCFXwXluqniJG3S3q0WISHtggQsNwhZjj0ulpwfEqe0W/Xdd5ykpSm0IJZlLz22x2fO+Itzt3KUcKZOKGIhJpJ4khDiEW9EfBJDDAmPxhH4sTNwMpYCriyB56XA8Zzp2gZWq+8lMAOCkiGvyxIys17jvFBVodnytluGEf6gtMB5Z3p3P3AKVmJGA6UzXe1NmWUBVLMENG48zXmdYtKT81PM8V61m91XG7n78u0ZOBZddqpsEKesHjJwYGEgE4CnSaYrGDgpywQzebncRrBqcZnp58CDykxbacoWlfqN+QPfrpOApfHOhe2Qdg5tzMkVh8vCqDxrI4YleuNcrus0u2hLsN6CZLU2O97WFeaDwmq2IkxZoyB5/ZA/XW3OO1NZU12nVuec6e2IGVOqpDZQ2XbU6uY1e9rwj1cbAxqahSkrCpXNaFHmc9Wch+rT4UzjYCh1/oQyKzXLhozbUodoKhueYfy0Cd+yUtm6f2Ia3GzP/JWpxxrObeMF8aJg4nE38keBG3qcuUksEpclvhyF4TgeJ8RZNx7Tx9qW17rV+UIbaxtfaXMfcGnFS1WYbyhmDp0b60FHRUyO3bPAf75WOzmfyVhQEk1if0JoBkZqtaBVPZtB1bT4BSDXu3MfQ+XGqji5aFW8t4Le5gMVdbD0Yh0r/qexEnv/h5VO0d/D0rOnz0qvM1+CCk+SRCYwcUnCuRtGELuxzyIXRh4PpB94XiTfROUtQMLj12vn2chyo6TirLvfG0RCQIZjznnghYGPKRhDgUCS0CMB8cUxTE6uwDoH4sO8bLu9fVjermez96Jf0OtldtyUO+d02ATHsWm/3x95YaplBXPbQEiZ0rS9OgdQ2qvhMFaHkvZYY1ICt/8BUoEWeIFos+cLnque68ghZntB4G6v/x2ANy8bXoGhnQHUJqAyL1Nm29jUss9tOCEQBX7sTsY+cgvByE1EELgEOQZgIH3xGU/c/R/4evDA+gkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Updating status to Aproved</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:07</sys_created_on>
+        <sys_id>b157144cc30432101aae50e1b4013132</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:07</sys_updated_on>
+        <ui_id>9e7dab1b-0b30-40f9-92fc-da9a06dbb96d</ui_id>
+        <values>H4sIAAAAAAAA/+1UTWvjMBD9K8VnY+w4zSa5lQ2BPWwL7dJLtwhZGicCWfZKcpps8H/fkS27afpBKIFlYX2yZkZv3hs95mEfCB7MgzHwOJklE5YmaTqK49F0nGSTNEtGPKUASRAGihaAlRpYqTmeN1TWLrDff9VALXCSRKzWGpRtGsxzYSpJd/e+DCNsLSTHfDB/eAyDimpEtKCD+f4oZXcVEEkzkHhxUbK6QNCLbwvEOJVtf/u2p3tM3/XAM/foRLggphyfJA4D2FpQHLBdTqWBMCio4tSWehfMra4xgKr5jZK7oWItlO2UFnRrxG/EH8euLgeUxvwUhiPxE+qHUwoGN5UVpeoilmayn1wp60JddxLcbCGntbQHs60N4kHlKDsSHcP8bl0+3fb9lkK16jxbWTIqhxO1VoustmDcc4CEdigFrSqhVqTS5Ua0l5FKEa0kHqJclk/Y04iViihzvCMcEI2WGF+04XuqhRPxHWHwctOKJ79q17eT4QmTVnMrmLQPhaWGaVHZKwTewECzCzqK/iHx743CpmlC7+zs8iOvsNmzNQ7aP7t7S5Ivs+lolhAFNpdiS0y9WoFpn+mVye8Oc5+z+w/H4uK6Y3GqgheX31HkDf8i5v1+eTa/T/+S3z2jf8zw79h88G48+nDPHbx0a1dz4FtjcSX/rOM45elrnx5lP+lUKBDTwkWHGp7MuQdYCpDcvCGit6pvQDa+wbCez+bXZBK33/8tfb4t3Tz+Ac4YJ/9WCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Updating status to Awating administrator's Approval</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:36:37</sys_created_on>
+        <sys_id>ef18c088c3c032101aae50e1b4013138</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 18:50:46</sys_updated_on>
+        <ui_id>de0c15fe-0fc5-4c63-94cc-3dd91c62580e</ui_id>
+        <values>H4sIAAAAAAAA/+1UUWvbMBD+K0HPxlhxmiV5GwuBPayFdvSlK0K2zolAlj1JTpOF/PedbDlN060LJTAG05vudN993+njHnZECjIjIxAJndJxntI0HSbJcDKi2TjN6FCkHICSiGheAr40kFdG4H3NVeMDu90nA9yBYDTOG2NAu/0e80LaWvHtfXiGkXwllcA8mT08RqTmBhEdGDLbnaTctgameAYKC+dV3pQIOvg8R4xz2fbVtz3dU/q+B95FQGfSBzHl+dAkIrBxoAVgu4IrCxEpuRbcVWZLZs40GEDV4kar7eHFSmrXKS35xsofiD9K/LsCUFoepnC4sjChfjiVzOGmdrLSXcTxTPWTq1RT6utOgp8tFLxR7mi2jUU8qD1lT6JjWNytqqfbvt9C6lZdYKuqnKvDjTtnZNY4sP47QEE7lJLXtdRLVptqLdtipFLGS4WXuFDVE/a0cqljnnveMQ6IxwuMz9vwPTfSi/iCMFi8b8Wz743v28kIhFmruRXM2o/CpzY3snYfEXgNgeY+CnbNrt4yQD59/u8jzGfLbhj9MJ0Mp5RpcIWSG2ab5RJsO/tXzr07zr3Pw189i8F1x+JcBS+Kf6MouPhFLJj46mImnvwlEwdG/5iL/+TdZPjm8jr66dau9si31uGe/dYkSSomr316kn2nU6FETAeDDjU6m3MPsJCghP2FiN6qoQFbhwaHnXsxv9Jx0p7/q/eCq/fxJ3iF4zYrCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=50c64c04c3c032101aae50e1b4013197^sys_idNOT IN3d57144cc30432101aae50e1b4013131,6838188cc30432101aae50e1b4013156,7d57144cc30432101aae50e1b401312f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f557144cc30432101aae50e1b4013131</block>
+        <comment/>
+        <connected_to>8723ee9b-7866-4ef2-9904-1efc97f5d60c</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:07</sys_created_on>
+        <sys_id>3d57144cc30432101aae50e1b4013131</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:15</sys_updated_on>
+        <ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec38188cc30432101aae50e1b4013155</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:46:51</sys_created_on>
+        <sys_id>6838188cc30432101aae50e1b4013156</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:15</sys_updated_on>
+        <ui_id>32eeb5cb-b7ea-4990-b45f-cff465f7e3e3</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3157144cc30432101aae50e1b401312f</block>
+        <comment>Sending approval to administrators</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:07</sys_created_on>
+        <sys_id>7d57144cc30432101aae50e1b401312f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:15</sys_updated_on>
+        <ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K5nPTmA7cRbnVnQoMGBbgbXoZS0MWqITobLkSXLSLMh/H+WPNFhT7AM97mY9iuR71CO8D3Tj6sbZW31hrVipYPntIQyE8hh97wMFFQbLgGnFhRNa5S0QBhuQjQ9crpE9CrUaAa+EEtYZcNrcN1GUvLcjg7bWyvoELmwtYXf3t3lsLSQ32DOrwVB/hyZY7n8JuV2NuYQCJZW/cYaKU7rgdCojKOOMxWyazKcJtVjM4mI+LeKETwFhSveGxMtB6OhTi4SvTsD3I9wOnbThnlYchQE+OVQcqXUJ0mIYVKC417c7IgaBXyv5DKyFclQu8JefrPhBtZM09RdLJI0Mu+DxmPcD7WC21oLhde0JdoiDQvY5TMumUl86Hf4psIRGuuEpCGks1cPak/YsekrlzVpvvw4Nr4RqBfZBqRnI4wkcjaFoHFr/MCixokJ5BXVNw8lrozeiTSYu1WQl6TAppd5SU++6CTBPfEIzgskV4R9a+A6M8Co+UxlK7mgWYAXLW4dSOWdIwqEdS/698YQ6gb2UvJsGXbDMiNpdUJ8N9qwP4Ut7nzh7v8/m2SybzWBcpAWMZ1kSjxecx+OkTKGI+GLBo2JC3EgdyNw6cHg4vPMenvIOJgu8cP6b1X2LzcggLdM4Ss9vxmx+bjPO7MTr65D8Zh38A/7hNkRR9H8dTtdB2Lyzda+tbf7P2/Dgrd91sJ1vODJhicitxz4O/wQf2JEBBDuFtto8egnP2OEnJFeMm10GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=50c64c04c3c032101aae50e1b4013197"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_50c64c04c3c032101aae50e1b4013197^sys_idNOT INa9074c08c3c032101aae50e1b4013186,ad074c08c3c032101aae50e1b4013189"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_50c64c04c3c032101aae50e1b4013197</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:31:50</sys_created_on>
+        <sys_id>a9074c08c3c032101aae50e1b4013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:31:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_50c64c04c3c032101aae50e1b4013197</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:31:50</sys_created_on>
+        <sys_id>ad074c08c3c032101aae50e1b4013189</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:31:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_50c64c04c3c032101aae50e1b4013197"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_50c64c04c3c032101aae50e1b4013197"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_50c64c04c3c032101aae50e1b4013197"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>netflix__suggestion_movie</internal_name>
+        <label_cache>[{"name":"Created_1.current.type","label":"Trigger - Record Created➛Suggestion Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_1798291_netflix_suggestion","column_name":"type","choices":[{"label":"-- None --","image":"","reference":false,"used":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","reference":false,"used":false,"label":"Movie","rawLabel":"Movie","selected":false,"missing":false,"value":"movie","parameters":{"name":"x_1798291_netflix_suggestion","dependent_values":[""]}},{"image":"","reference":false,"used":false,"label":"Episodes","rawLabel":"Episodes","selected":false,"missing":false,"value":"episodes","parameters":{"name":"x_1798291_netflix_suggestion","dependent_values":[""]}},{"image":"","reference":false,"used":false,"label":"Series","rawLabel":"Series","selected":false,"missing":false,"value":"series","parameters":{"name":"x_1798291_netflix_suggestion","dependent_values":[""]}}],"usedInstances":{"b4ac93ac-362e-4db5-b5d6-9b50604a13e0":["type"],"0c30a786-007c-4012-95a3-4987225f5744":["type"]}},{"name":"Created_1.current.release_year","label":"Trigger - Record Created➛Suggestion Record➛Release Year","reference":"","reference_display":"Release Year","type":"string","base_type":"string","parent_table_name":"x_1798291_netflix_suggestion","column_name":"release_year","usedInstances":{"b4ac93ac-362e-4db5-b5d6-9b50604a13e0":["release_year"],"0c30a786-007c-4012-95a3-4987225f5744":["release_year"]}},{"name":"Created_1.current.title","label":"Trigger - Record Created➛Suggestion Record➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"x_1798291_netflix_suggestion","column_name":"title","usedInstances":{"b4ac93ac-362e-4db5-b5d6-9b50604a13e0":["title"],"0c30a786-007c-4012-95a3-4987225f5744":["title"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Suggestion Record","reference":"x_1798291_netflix_suggestion","reference_display":"Suggestion","type":"reference","base_type":"reference","usedInstances":{"de0c15fe-0fc5-4c63-94cc-3dd91c62580e":["record"],"150c84fb-0644-41ec-a797-470c0678e29f":["record"],"911eb05e-e175-44be-98aa-5c0d8014aa4a":["record"],"77a7037d-6561-4bbc-b273-104413c5ba18":["record"],"9e7dab1b-0b30-40f9-92fc-da9a06dbb96d":["record"],"0c30a786-007c-4012-95a3-4987225f5744":["title"],"543b071d-b32b-4715-90e9-070a295f6aa0":["record"],"3f8b7fed-8f5c-4c3b-b168-f3a6218e168f":["record"],"8923cc55-f813-41ad-93a7-3b1bae156af9":["conditions"]},"attributes":{}},{"name":"{{static.83da731cc3f722101aae50e1b4013198}}","label":"Netflix - Administrator","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"150c84fb-0644-41ec-a797-470c0678e29f":["approval_conditions"],"9694944a-b5ba-4921-8dd1-2f5ab0d88d0b":["approval_conditions"]}},{"name":"de0c15fe-0fc5-4c63-94cc-3dd91c62580e.record","label":"1 - Update Record➛Suggestion Record","reference":"x_1798291_netflix_suggestion","reference_display":"Suggestion","type":"reference","base_type":"reference","usedInstances":{"9694944a-b5ba-4921-8dd1-2f5ab0d88d0b":["record"],"ce1a273b-88e2-4582-b262-919bee48c3ac":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9694944a-b5ba-4921-8dd1-2f5ab0d88d0b.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"8723ee9b-7866-4ef2-9904-1efc97f5d60c":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Suggestion Table","reference":"x_1798291_netflix_suggestion","reference_display":"Suggestion","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>Netflix - Suggestion Movie </name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Netflix - Suggestion Movie ">50c64c04c3c032101aae50e1b4013197</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e1f9840cc3c032101aae50e1b40131d7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e1f9840cc3c032101aae50e1b40131d7^sys_idNOT IN65f9840cc3c032101aae50e1b40131d8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e1f9840cc3c032101aae50e1b40131d7</id>
+        <name>Netflix - Suggestion Movie </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>65f9840cc3c032101aae50e1b40131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:44:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=65f9840cc3c032101aae50e1b40131d8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e1f9840cc3c032101aae50e1b40131d7^sys_idNOT IN69f9840cc3c032101aae50e1b40131d9,a1f9c40cc3c032101aae50e1b401310d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</model>
+        <model_id>e1f9840cc3c032101aae50e1b40131d7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e1f9840cc3c032101aae50e1b40131d7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>69f9840cc3c032101aae50e1b40131d9</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=69f9840cc3c032101aae50e1b40131d9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</model>
+        <model_id>e1f9840cc3c032101aae50e1b40131d7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e1f9840cc3c032101aae50e1b40131d7</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>a1f9c40cc3c032101aae50e1b401310d</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a1f9c40cc3c032101aae50e1b401310d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e1f9840cc3c032101aae50e1b40131d7^sys_idNOT INbdf9c40cc3c032101aae50e1b4013181"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>bdf9c40cc3c032101aae50e1b4013181</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:44:40</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACutixlbetk0UDbDeonW0fglSgpKFNlKZciVLiLvLvHepiy7r4nk3yEsAkxTlzeOYMmYfvOicecP1KvyceB/1CZ0JCJAi/Xy4Ah6UadgWZq7k5EQGRYbTUr2SUwIUeRgFE+pV5oaeEJzBZxrcBfoRLsy+Kz/ViGn8/u+bAGVqO6QqQlLNnN06mU4glCwUuC1i84GT5Z7F6Up3zZ4wHEQj96uHxQl+QCCNIFf17bYopCD71iWOB4dumbVmGYQ17pndpe6YV2AQMAzesZ16DLFsIWOcLzxJEABiKEh5DCzcRkOBO8OVqxQypzcmZk+eY/Ye7Dw21jgJi9yGfW/10CzLyYX8WMh/uFhkZ2UiOM58MeTIXX3P8ikagJOGypBFHkhj3g4WCrEAUiOhkFj6Ny4CfmciyKyZ56BO++kWkjJiXSIgV4ZRxpN7NuYnDJMrQj29Gd+Nr969P96Pfbsbu+GZyP74d3d9c6y9ZXu6/idoxR1hgcfN0XlZn/5kBVwcomcyOIfYjtpCffMlSKNC8XKxlOwpFwAqF1KTrl1PxpnSLjMqzNIxO9fqVzUsF/33zR1Oo+eBhCr28JCQA0qFQj1YUWk2yBZpsybea3TatFiP7iLVnGG8k17ygjlbrPAyAX6+303ESjSVymVgkUrH1RISMXRm6JAjcCo9qKWLaJd88t5edYo0SgR+4q/NoSjajbcXfFxYj3Aest5KbbEucp1+KLceJ0EI8OPyj+UmE1EitdDB6OyfTglE6AQ6+rIiAfourv35ncczEtIJ6FTTjoBFzFQ7FpJUp5bHjE4M/HlmvTX7TGm+1uj24aE2TUg+oZQxUyZqG7VHTGBh9QgPbMHyrUrRNMJ0oZe30X6V4DyvdONMd30NldYoL8EZV+HspJt2UW0mCUkPhEKPzQDPPBM1S0GpOZx9kdStZ5sPXm+rcltqZGzoJUoJfBPs63p5mR3n4hC57hNF5xP9nGoWJCOrOo/bUmNDWK7SfCv5+PqPp0TCC7QA2V7yR3a0ZLjVKxPIMRmdT03OgBwb6m43W5vUdx/OJRengcgCWWTO6NYxWbB/C4HYIK21TZpfZtWokbZPWATZ3AsCG5R0M8HSzK4TZanX53McwtacZCBehRi5XttXwtilnAZRzRxd2I0q6LuVTi5sOHb9vDgb+AJ8dWNy0Bx4xe1afOINLe9ivFXcDyjaYsoWEH/IYiZdxBqSj8L/lU+/rHf2aCo1BStVkDu+9Am+n2TckD1Lpf+pYtMw/wkj7GopfbtfrtAlgW8tepOdqwvugUAervS4ML5Szxi0AQ/+K4xuh1e2xg5W3fBPV9JBupnXymwh6w75D7XY3oU6bm6zBdMN895eGPYsh7SyrttvDvtpOW0uks90fodaaTKr3gC0XlXORYp6dFOv1SLFPvhyVtdj5EDwG7AfqVtkV4pSWpWKCG9KqT1+HGk5oGERjVCv+64fvem+pyRkgpRxvwRhQU9FPNehqw2hCWSn4xwLJ79WNxoXDWnFXetOeVDv18z5hIRiQft/uuOU69SdsG6AdeN99hzq4ANK2etrapg7bt75na6OqqHNTEXu2oLNm3d6HTsu6tRPtyvr0HrPtAd6C4p12j8f/AXWlKR21HgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e1f9840cc3c032101aae50e1b40131d7^sys_idNOT IN2df9c40cc3c032101aae50e1b4013164,6d38588cc30432101aae50e1b4013112,7a9f6088c38432101aae50e1b4013150,b257144cc30432101aae50e1b40131f6,ba57144cc30432101aae50e1b40131f5,ba9f6088c38432101aae50e1b4013151,f69f6088c38432101aae50e1b4013152,fa57144cc30432101aae50e1b40131f4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Updating status to Awating administrator's Approval</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>2df9c40cc3c032101aae50e1b4013164</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:44:40</sys_updated_on>
+        <ui_id>de0c15fe-0fc5-4c63-94cc-3dd91c62580e</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEoIZcBbBUKa1LVSmXjpqsiJb8CS42T+oDDEf99N4oQIqo5KfUHLm++Hfc7xuc7LgXBGpmQIzA8mwSgJgzAc+P5gPAziURgHAxZSgID0iaQZYKWCJFcM11sqbBk4HGYKqAEWBV5ilQJpjkfMM64LQfcrV4aRZMMFwzyZvrz2SUEV7mhAkenhLHUtJEFjEFj63GA6x2j2RblmeWIzxBXxJvjgOucu0/s+xww2lXACv09gZ0AyQCApFRr6JKOSUZOrPZkaZTGApNmTFPu2YsOlqYlmdKf5Hzx56Jd1KSCzxInQLiMnUB1O59TQJe6cGKtavXKegK41YZBSK8ysG6sLngrDc1m3GBqLpjsXNpOPtSKk3aBzH1YjCChKniXymla63ORvzw3IBZeVJI6iyBMq2hU1RvHYmhLOgYCASuOMFgWX66hQ+ZZXzQgl89YCF14q8jc8U/O19GhS4vZQVeotMD6vwiuqeEniB26Dzcc+0Xs9E1TrExXUMPptSyQ1MUchqlSoJIgqJ5TNieKFucejtuCAH/vO9PHdRw5LJidDdfY8GX8XBd8m48EkiCSYVPBdpO16Dbq6jQv/L7u5z03CFTibSfhZ3f/7uN0wXMQeur29xzrhRuHuy0ZhfEuj4Gjc/Cz8awL8wYdvbMdJlel1x/3a4Jv/y/p+yMaXbj/Lfs7vV6Bq/L7gIJh+B2ZjdsgQloGohn1meJfsrVyyff+/zPXByK++G/L+f/MbeP0LVJcWCv0IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Creating a new record in the media table</comment>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:46:55</sys_created_on>
+        <sys_id>6d38588cc30432101aae50e1b4013112</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <ui_id>0c30a786-007c-4012-95a3-4987225f5744</ui_id>
+        <values>H4sIAAAAAAAA/9VU247aMBD9lZWfdqU0SsiWAn2qWPG0F6lb8bKXaBJPwJJzqeMAKcq/dxwnQFlQW6lStTzFM2fGZ47n8LRlgrMJG/rofRz7wzjwg2DgeYPRtR8Ng8gf8AAQr5nDMkiRkBoiiWF7cNgKZGWCm9D/NB4Nxn6YoU6k2IQpcgGE4KIsJNTzDnjXheOlkFxhxiZPLw4rQFE/jYpNtkepP2UnIUJJ0G+G3hm2ui5Oxm4Pay/ubSJX3PDxHIYbjRlHIpKALNFhKWQcdK5qNtGqooBC4A+ZrHeIpcg0NWQGuynFD7p25BlcgjRZjDa3O4adSjac3ICGR+oc60p10HiZixhLqwnHBCqpp4cxC3gotMgzW9KO2VXnskqzeysJ2zXoH4UiVUkksDBzGubdGMnjMl9/7VnORNZK0iVlHoPcnUBrJaJKGz5bhhJTahSmUBQiW4SFyleiLSYuqbuQdHATma/p0lIsMhdiQ9wlWcGdUfymDc9BCTPFHbWh4sZhZV1OJZTlfhYSMfxeGSZ2sm6G0MpgSmIlCv2FLlhhR7dx+rXn6I3PLpYf7Rep3fTyYOW10BKfK88L+HY7pQ3QyEPfjStFYmm3TTfNq9kvi0r4B0sF+asigYAkrxHU+R6HqKZ5a6b/QeEvjft7fXvjzgRKXp4QvHctpjS7xtA+wJFzu+TFvEt27vX/lXv9odf+3pGH7XDv3sIH/9ZvzGxHtDHDud1483HC84SDFfKdXk2/WcfoX5uyhIftSKTNYoFq7y4qdnVOb0zqXF7R522+RjUlt1xefWZH1530J3UgTzVN8/IT/Cn12ocHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 20:29:08</sys_created_on>
+        <sys_id>7a9f6088c38432101aae50e1b4013150</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:08</sys_updated_on>
+        <ui_id>8923cc55-f813-41ad-93a7-3b1bae156af9</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCnQboMn20u0SlEjF3KVJlaSSJob/e4ciJRu2YluoAyTYmzkckm9m3htS/rYKGQkvQzKLZvlsNp4mUTQcRtFkMsxwnKbDSZZGKR6FvVDgJQVPg1NOYfiAeWnH+knjolASxsj9oAqmCdMFx09fvdcH7wIz2YJxoqgIL79974UFVrCvgTWXq52pU4FxnFIOrnce2Q5Q81Q0Q1TNOdun7WXBZzchFbFQol5IfxoqCAUMOeaa9sIlFgQbqZ4ai6KY3Ai+MSyYMLBjaJ1/avYM504j65dTiCqjbq4ZIp8kZ86vscG3RpWZKZV3zRaSZVS7fBCa45Kbq22bc7gpDJPCLXFhu9WSl0vx2aUjbDaoawKWUgMIWthALXIfRn67kI9fapRzJqqc+EkuMyhjPcLGKJaWxuJZhZTTJWyElkAEJu6RrTmrFgOWZf+ew6Cfc/kIh2p2L/o4s8D7kFfcn4P9ujJ/xYrZKP6EbSoy5YwDQ5AroZalqlL5gDJe6mpCYaHdXuG6Zyl5xbHWm8gh5ehHaXG7PPiIkUuaXZIpVpgPsMUDbYJzRhuYT+qqzW+9XvdqFY0PknW2IWcmBWEWr26X0t8l7EBWqyvgmKEExf2sVFAOs17/ow2YnIOi/9IM5vcF91t7dZTo8ahriV5th92WCi/WPduntg28WOOziXUURe9JrnD421Nrd/25FLSLsJFWTA6SjGz4pKUyyOVyS1v7CunM8xMg1Dy/scwM0qeXUHma54xy0nYnze3Ezp00+H/eSW+S5ACIIFc9JjgT1QMDgL4W+8cHqZfGOzyr6LV1r1gb1tm+BnBgZPDcWQknwKmVcAtnB3cOTwvEut9XlNnt9bXRC2B4NgEMB+cRwKoJs0lkS87rN6WtZu3/bP3xrj9QcGtBvG4TWKcz465nDtb7Ah52UvA22dzM9QucO/Pj8wVF9l6zBSxgqT8POf2iR0buqdmcXnsRaR4x/69t3jMO1YWqwjvfQ3Zzhx78lkq3nqcsR0uoHCvgva1oBuTQCCuKclkKgvxLe0MkW8mcKW28836j+UJBPyKQIMzALGhQeQeNd8eL+HgcdSo/5kEdiD9NBxBIUAUSNIF0C7tL0xqd8XF67qY1x4xX1YCPqGKrnFQpqV5oXEcKeYARJ3a1E0HFZwX1+22vTQKt7e8I1nfxRX7+1pRRnI4GeJIM4ziK4ogk0TRJ4ukkzSc4GeUbjSKkRQbdFHbOgSqwPaqpUdc52u8/rqV2bTQnoKopeC2F/YweJCawsKC+QQ3rOHDfUFIpOcVip6PcwT3xx9zj93wdv7mu8i7+nyrZ3W6mnak116/1bijZX4L9KOlHS7EpjQbTmGQX0yROLkY5mVzMCB5f4Fk6ToaEZqP8nE+B778Ar6RS0PEVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Updating status to Aproved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:11</sys_created_on>
+        <sys_id>b257144cc30432101aae50e1b40131f6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:08</sys_updated_on>
+        <ui_id>9e7dab1b-0b30-40f9-92fc-da9a06dbb96d</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5WfoyghlAFvFQhpUtdKZeKlqyInvgFLzsdsh8JQ/vuuEydEwCoq9QUtT/H9sM+5OSd+PRDOyJQMgXn+xB/FgR8EA88bjId+NAoif8ACCuATh2Q0BayUEOeS4XpLRWkCh8NMAtXAQt+NSykh01WFecZVIeh+ZcswEm+4YJgn09c3hxRU4o4aJJkeTlLXQhI0AoGlLy2mU4x6X5g1y+MyRVwhb4OPtnNuM3ff55jBJgPH9xwCOw0ZAwSSUKHAISnNGNW53JOpliUGkDR7zsS+q9jwTDdEU7pT/A+ePPRMXQLILLZD6JahHVATTuZU0yXuHOtSdvPKeQyqmQmDhJZCz/qxpuC50DzPmhZNI9F256JMs6dmIqTboPc9SoUgoDA8DfKGVrLc5O8vLcgFz+qRWIoij6noVlRryaNSGzgHAgLqGae0KHi2DguZb3ndjFBSdy1w4SYif8czFV9nLo0NbhenSt0Fxud1eEUlNyR+4DbYXDlE7dVMUKWOVHCG4e/SIGmIWQphPYV6BGGtBNMcS17oBzxqCx3wJmhAW6Xg24XCqqoc64/o/iMxxpOj9nrHHz2yC/1vk/Fg4ocZ6ETwXajK9RpU/eHOrLLs5z5nmitwtqb5WUvlMm7rm7PYY7/37qlJWNfcf5lrxrfkGkvj5m3zD7N0DvAGH/6Oe0qqRa966lcar4dfpecFLDhX+0n2c3q/AlWr9wUHwdQFmK3YIUVYGsIG9ongbfJuZZPdVfFlqvdHXv3ckPb/lxujevsLvibVHigJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Updating status to Reproved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:11</sys_created_on>
+        <sys_id>ba57144cc30432101aae50e1b40131f5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:08</sys_updated_on>
+        <ui_id>ce1a273b-88e2-4582-b262-919bee48c3ac</ui_id>
+        <values>H4sIAAAAAAAA/+VWXW/aMBT9K8hPnQRRQoABe5rKKm3qWqlMfSmdZewb8ObYme1QGOK/z4nNh6DrWqkv1Xjzvb72OSfnkNytEWdoiDrA4mSQ9GiapGk7jtv9TjLtpdOkzVICkKAmkiQHt1MDVZq59YKIsiqs1wximnQzaMUZ7bY6tJe2Bh1KWyljg4T22t1+DJGf22zcJOOmEGR1Gw5wFTrngmmQaHh330QF0e4uCxoN10et54IVZArCbb3Zoj1Gb1dFtWaKljlIi/m2eBkmR6HT+DxyHTdUwUniJoKlBcnAAcmIMNBEOZGMWKVXaGh16QoaCLuWYrXbMefSeqI5WRr+293ciat9GThmNIiwW+IgkC9nI2LJ2J1Mbal3eilOwXhNGGSkFPb8sOY3XBeWK+lHLJmK7bQSZS6vvCJod8DB8yiNAwFFxbNC7mll47l6uNmCvOCyliRQFIoSsVsRazWflraCs0YgoNY4J0XB5QwXWi14Peyg5NFMuEWUCfXg7jR8JiNCK9yRU5VEF64+qsu3RPOKxFd3jBveNJFZmXNBjNlTcRriX2WFxBMLFHCtQi0Brp1QDVPNC/vRXbWAAHzTDHGYdp9yGB3sDXVw5j4SS5y8H/TbgwRLsJngS2zK2QxM/TRO/D8+7L0sCc/AuU3Ct/r5P447hOGkdnk427jyjRCF7qtFof+WohBovPks/CsBcfvJ/9gDJ9WmNwfuN5ZYmJRxnLLOdw0VQyKwc4JR0pcz1vJ3AzuNw0vHX5aYZ/DaJuaCg2DmEaLbuEDucFvAnvhRZEKzcRuauzfIq+Um6cX17w2l5z94kXiKvlZhPnJwVXpqwLlMN45mGt72jYzhmgnuYiyU+onLAvsPmvB1FTkVKoFMNAP7RZVaEvFJWr06S959mMi/HHtUjpxluD2boMlETtAjc5GZ88ye+Y6zkjw54Yficn+A08+QBbCdLTabzf0fKYMHiHkKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Sending email with reason for rejection</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 20:29:08</sys_created_on>
+        <sys_id>ba9f6088c38432101aae50e1b4013151</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:08</sys_updated_on>
+        <ui_id>543b071d-b32b-4715-90e9-070a295f6aa0</ui_id>
+        <values>H4sIAAAAAAAA/9WW226jMBCGX6XiOkQYSCC9WzWqVKnbSkm3N6sKGXucWDKHgkmTjfLuOwZyTtPDblfaS49P//wzH+bn0pLcurR8HnI+EMQRhBCHOD3ikhBCiFnQD8ANrY6V0gRwZQEsKziOZ1RVJrBcXhVANfCIdFlVFJDq1QrnuSxzRReP7TKMsKlUHOety59PHSunBZ6oobAulwdT75WkaAwKl47Wmg416kVuxjxjVYK6IrkO3rY7h+3Mxc0QZ3CTkUM6Fsw1pBxQh6CqhI6V0JRTnRWLTQST5vep2gamMtVNogmdl/IX3uy5Zp0AzIy1JmyGUWtQExZDqulYFxXTVbHxK5MMysYTDoJWSl/txpoF97mWWdps0TRW692ZqpL0rnHE2hywU4+qRBGQm0SNcrwcsxDjafYyWou8lmltSZuiyhhVmxHVupBxpY2cpVXJh1NuN+HTfoOCemFC81ymkygvspms70P1SXeicNAVKntBmaWcpF3KTKpdrATtXmN8WIcfaSFN3t/xGNxs7vyRyucKbkwfceIE3sBhduD2PNt3GLXjkMc2jV3R8/1+2I+JtepY5aK8UrQst45hqaLnyiTc+Nc6FdVm105HdcOZzayQuf6G8mbQ+rPqtGyF5Fwje+62b3fO3PI1j0gwCN0BiVLQQsl5VFaTCZR10Y8wG+/OfQy4d+hcA/dQt9lp3S1zR7Hb3b0Xd81ES5z7QeKaVj0BXOj8R8C1af05cXte7wO35/Y/4Y3FcSxiGNgkZsz2Awjt0KWBDT2HecL1HCcQn+DtLcr8892784KlmZZCMtpCsubMB/w0hIwxz/E9F4+gFCUDiX2HeMTl51i7GIHxEvjHX7m3Za+hu9vXfTqblr4tA/vwjXbiLXveefYa1D7z2GGBYWbqBwmVKmp66RUgD3L7y3C+pmSPWCoEMPMbIyQojk0X1Xu+5OUUY6AFm16bm0wNGzz36d4rLDKOdxzRvVvOr4P74binStBRa0tkDohEViTUdESd4eE3wR8QCDw3tAd9F78J4PXsmHueTfAbAUBBuPxr3uCn3+r9mFnhCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Sending email informing that the review was approved</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 20:29:08</sys_created_on>
+        <sys_id>f69f6088c38432101aae50e1b4013152</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 20:29:08</sys_updated_on>
+        <ui_id>3f8b7fed-8f5c-4c3b-b168-f3a6218e168f</ui_id>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqniJG0S7hAICYkFibLcIBQ59rhYcg4kDrRb9d13nKRteuC4y0p76fHpn3/mi3O/sCS3ji2fh5xHgjiCEOIQZ0RcEkIICQvGAbihNbAymgKuLIHlJcfxM1W1CSwWpyVQDTwmQ1aXJWR6ucR5LqtC0fldtwwj7FEqjvPW8f3DwCpoiSdqKK3jxc7URyUpmoDCpTcrTbsa9bwwY56zOkVdsVwFL7udZ93M0cUZzuAmI4cMLJhpyDigDkFVBQMrpRmnOi/n6wgmza8ztQk8yky3iaZ0VslfeLPnmnUCMDPWmbAexp1BbVicUU0nuqyZrsu1X7lkULWecBC0Vvq0H2sXXBda5lm7RdNErXbnqk6zq9YRa31Arx51hSKgMIka5Xg5ZiEmj/nLzUrkucwaS7oUVc6oWo+o1qVMam3kLKxa3h5yuw0f9hsUNAtTWhQym8ZFmT/L5j5Unw6nCgdDofIXlFnJaTakzKQ6xErQ4TnGz5rwHS2lyfsHHoObzZ0/M/lUw4XpI06cwIscZgfuyLN9h1E7CXli08QVI98fh+OEWMuBVc2rU0WrauMYlip+qk3CrX+dU3FjduN03DSc2cxKWegTlPcMnT/LQcdWSN5qZM/d9G3vzA1fs5gEUehGJM5ACyVncVVPp1A1Rd/DbNKf+xxwH9C5Au62abPDujvm9mKX/b1HV+1ER5z7SeLaVj0AXOj8R8B1af05cVtebwO35fY/4Y0lSSISiGySMGb7AYR26NLAhpHDPOF6jhOIL/D2HmX+293be8GyXEshGe0gWXEWRISNHd9nXuh7Lh5BKUoGkvgO8YgfvcXa0UlhvAT++Vfufdkr6K62dR/OpqNvw8A2fDe9eMee9zZ7LWpfeeywwPBs6gcplSpue+kVIHdy+8twvqZki1gqBDDzGyMkKI5NFzd7vuXlFBOgJXs8NzeZGrZ4btO9VVhkHO/Yo7tfzu+D+3a/pyrQcWdLbA6IRV6m1HREk+HuN8GPCASeG9rR2MVvAngjO+GeZxP8RgBQEC7/njf44TfExyq74QoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:11</sys_created_on>
+        <sys_id>fa57144cc30432101aae50e1b40131f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 18:43:11</sys_updated_on>
+        <ui_id>9694944a-b5ba-4921-8dd1-2f5ab0d88d0b</ui_id>
+        <values>H4sIAAAAAAAA/+1XXW/aMBT9K5WfKXMIlMBbNdRp0z6kdtpLqSJj34An42Sx05VF/Pc5thMyWClsvHTdo++Hfe7hnBjflogzNEbDKOnBaNTDswDjEONoQHEUwiwcXgxDQjHqIEmWYCpzoGnOzPqeiKIKlCUDTINBAuc4oYPzPr0Iz0d9Ss9DxkYBvegNIgxd17dem07GVSbI6ovfwETogguWg0Tj27sOykhuztKQo3G5lToUrCAzEKb0uka7jV6vsmrNUlosQeqY18H3vnPiM2dvJyZjmio4uIPgQYNkYHAkRCjooCWRjOg0X6GxzgsTyIGwT1KsmooFl9rNuSQPiv8wB4e9qi4BMxj1HDTL2PPjwsmEaHJjdqa6yBu6Uk5BOUoYJKQQ+nU75go+ZZqn0rVoMhN1dyqKpfzoCEHNBq2fo1AGBGTVnBVyN1Zys0i/X9cgr7i0jPgRRUqJaFZE65zPCl3BKREIsBQvSZZxOY+zPL3nttlAWXbnwiy6iUi/mzMVn8suoRXurmGVdK9MfGLDX0jOqyE+mG1M87qD1Eq9FkSpzSiGw/hbUSFxg/kRYsuCo6DqoznP9KU55R485nXHG2FG92qLbqTkttv44CEOhqOoNwpiCToR/CFWxXwOyv4GO6K/aeeOk/8BEGv5f/YYtyB78dtlbHO/at+2nX10CS/9YL/0fWSjfSea30g/ws9I+n6sZ6/9p2SPg32aYtFGQwaBmYGIOOEg2vdAndjVeitznNIPQFUr/dKfcXblYT0G12vfLn+nfdu/pf3ekdp//LsfYfyc5P+Svvx0r9gg3Gjqa1rkco8D4gVXVhmPOqFVcZwjDgBZO+KdQ7ltiG3wf+KH8L8f/n0/9Ad7pdb6W9GomqaS8QqxarnCfZlBXcNXoFpdytWb27JUmmhOu1HIyDAMKA2TYa8X4IAQGGAIZn0chMEoWq/vdl10gh2Pc90BVDQPjkKAeooa77kmmfumtu+aC63e0Xuvf6onyDOz3kv5J0b3ai0ZbbTFCkMQ0e03SDlFDvYUjadIphKmqDNFVVVcicuGTYUB1yRsrCzXaxcpcuI3CFrLTTcjK2UrFV0AM9q00V8isTWDj5/iwX8AJ7X/JgWcTRwpuzR53zU4HS9858678QV2p1efefvuG5zs7uv/t9/f2s/A5HHzvDAXm/n6ndCTdz8BbSljBB8TAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e1f9840cc3c032101aae50e1b40131d7^sys_idNOT IN2938588cc30432101aae50e1b4013115,3257144cc30432101aae50e1b40131f7,f257144cc30432101aae50e1b40131f8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec38188cc30432101aae50e1b4013155</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:46:55</sys_created_on>
+        <sys_id>2938588cc30432101aae50e1b4013115</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <ui_id>32eeb5cb-b7ea-4990-b45f-cff465f7e3e3</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3157144cc30432101aae50e1b401312f</block>
+        <comment>Sending approval to administrators</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:11</sys_created_on>
+        <sys_id>3257144cc30432101aae50e1b40131f7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <ui_id>8723ee9b-7866-4ef2-9904-1efc97f5d60c</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FZdn2dDTtX0LHAQokDZAE+TSBMKKpGwiFKmSlB3X8L93KckPNC5aozn2Zs5yd2dGHHhLdOPqxtkHfWWtWCgy+/YcEKE8hr+3REHFyYxQrZhwQqu8BQKyAtn4wnzJ6YtQiwGwSihhnQGnzVMThvFHOzDc1lpZ38CErSVsHi/to0shmeE9sxoM7nfckNn2l5JgOLYMoYymNKJJPE5iHDZJo2KcFFHMEuCQ4EAJBZeewV7S4LZFgt9qdZva48gRCffn237K/R7UhnlWURgQ/uq4Yhz5lCAtD0gFinl5mwNiOLA7JY/AUiiH44i//GrFD1wYZ5m/WHKUSHlXPBzz3s8OLq/BAVJpqGtMf5UutaDcduYwXkIj3fwU6y7c1V5q1+KgkPtuLZtKfekcIYcB+8+HSGORBK+9Uk+911HeL/X6657ljVCtK31RagrycAKH3hWN83y2hEte4aC8grpGR/Pa6JVom5FLNVpIPIxKqde41L/UEVBPfITGwugG8esWfgQjvIrPOAabO5oFWEHz9lXjOLSJk11A7MbOJVh7FInu5t8bT7GT3IvLO398CzWidle4ecV7HbvgbUhO8rHdTsfTdJqmMCyyAobpNI6GE8aiYVxmUIRsMmFhMUK2qBdkbh04vtt98ElIWAfjS3qTn3ebe1m+ppCVWRRm5/OVjs/l60yyLgxV/IdQ+S/6l5kKw/B/qP45VMLmXRR6be3yd8zUsw9Qt/PgNRUWqT147NP+/8kXNvi4BD2F1tq8eFFHbPcTlQiQNOkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f557144cc30432101aae50e1b4013131</block>
+        <comment/>
+        <connected_to>8723ee9b-7866-4ef2-9904-1efc97f5d60c</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Netflix - Suggestion Movie ">e1f9840cc3c032101aae50e1b40131d7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 18:43:11</sys_created_on>
+        <sys_id>f257144cc30432101aae50e1b40131f8</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 13:04:17</sys_updated_on>
+        <ui_id>d82731a0-3fde-4031-9626-0ffc09d1795c</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e1f9840cc3c032101aae50e1b40131d7^sys_idNOT INadf9c40cc3c032101aae50e1b401315b,e9f9c40cc3c032101aae50e1b401310a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e1f9840cc3c032101aae50e1b40131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>adf9c40cc3c032101aae50e1b401315b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:44:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e1f9840cc3c032101aae50e1b40131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:40</sys_created_on>
+        <sys_id>e9f9c40cc3c032101aae50e1b401310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:44:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e1f9840cc3c032101aae50e1b40131d7"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>50c64c04c3c032101aae50e1b4013197</sys_id>
+        <latest_snapshot>e1f9840cc3c032101aae50e1b40131d7</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch9a-06-23-2025_07-23-2025_2226.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=50c64c04c3c032101aae50e1b4013197^sys_idNOT IN7df9c40cc3c032101aae50e1b4013198"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"7df9c40cc3c032101aae50e1b4013198","name":"plan","plan_signature":null}}</plan>
+        <plan_id>50c64c04c3c032101aae50e1b4013197</plan_id>
+        <snapshot>e1f9840cc3c032101aae50e1b40131d7</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:44:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7df9c40cc3c032101aae50e1b4013198</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 18:50:48</sys_updated_on>
+        <trigger display_value="">3df9c40cc3c032101aae50e1b4013196</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=50c64c04c3c032101aae50e1b4013197"/>
+</record_update>

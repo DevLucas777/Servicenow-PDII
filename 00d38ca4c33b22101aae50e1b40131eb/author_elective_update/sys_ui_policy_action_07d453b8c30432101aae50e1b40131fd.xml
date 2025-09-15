@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>integration_state</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 16:26:35</sys_created_on>
+        <sys_id>07d453b8c30432101aae50e1b40131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>integration_state</sys_name>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name>sys_ui_policy_action_07d453b8c30432101aae50e1b40131fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 16:26:35</sys_updated_on>
+        <table>x_1798291_netflix_media</table>
+        <ui_policy display_value="ReadOnly when state is &quot;Complete&quot;">7534d378c30432101aae50e1b401313d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=07d453b8c30432101aae50e1b40131fd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</application>
+        <file_path/>
+        <instance_id>566b0166ff8e5e58c80bf8e4fc4fd9e5</instance_id>
+        <instance_name>dev292162</instance_name>
+        <name>sys_ui_policy_action_07d453b8c30432101aae50e1b40131fd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>integration_state</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-15 16:26:35</sys_created_on><sys_id>07d453b8c30432101aae50e1b40131fd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>integration_state</sys_name><sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package><sys_policy/><sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope><sys_update_name>sys_ui_policy_action_07d453b8c30432101aae50e1b40131fd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-15 16:26:35</sys_updated_on><table>x_1798291_netflix_media</table><ui_policy display_value="ReadOnly when state is &quot;Complete&quot;">7534d378c30432101aae50e1b401313d</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=07d453b8c30432101aae50e1b40131fd"/></record_update>]]></payload>
+        <payload_hash>1211209323</payload_hash>
+        <record_name>integration_state</record_name>
+        <reverted_from/>
+        <source>f754d428c33b22101aae50e1b4013105</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 16:26:35</sys_created_on>
+        <sys_id>53d493b8c30432101aae50e1b4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1994e331a370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 16:26:35</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>57d453b8b00432108915c9a2dd007cff</update_guid>
+        <update_guid_history>57d453b8b00432108915c9a2dd007cff:1211209323</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 16:31:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>047056666ff649e8808ffe19419b5440</sys_id>
+        <sys_metadata>07d453b8c30432101aae50e1b40131fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>integration_state</sys_name>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_parent display_value="ReadOnly when state is &quot;Complete&quot;">7534d378c30432101aae50e1b401313d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_scope_delete display_value="">1630857a7bad45828794d905f207a004</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_07d453b8c30432101aae50e1b40131fd</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_07d453b8c30432101aae50e1b40131fd">53d493b8c30432101aae50e1b4013100</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 16:31:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

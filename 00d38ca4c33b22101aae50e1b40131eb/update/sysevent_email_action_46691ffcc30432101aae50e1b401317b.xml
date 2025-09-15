@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_1798291_netflix_media</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .notification-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .notification-header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .notification-header h1 {
+            margin: 0;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .notification-body {
+            padding: 25px;
+        }
+        .notification-message {
+            background-color: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .notification-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto 20px;
+            padding: 12px 0;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .notification-button:hover {
+            background-color: #2980b9;
+        }
+        .notification-footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #7f8c8d;
+            background-color: #f5f5f5;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+<div class="notification-container">
+<div class="notification-header">
+<h1>Falha na Integra&ccedil;&atilde;o</h1>
+</div>
+<div class="notification-body">
+<p>A ${title} ${type} falhou na integra&ccedil;&atilde;o.</p>
+<div class="notification-message"><strong>Erro detectado:</strong><br>${integration_erro_message}</div>
+<p>Por favor, verifique a m&iacute;dia para obter mais detalhes sobre este erro.</p>
+<a class="notification-button" href="/now/nav/ui/classic/params/target/x_1798291_netflix_media.do?sys_id=${sys_id}"> Ver Detalhes do Erro </a></div>
+<div class="notification-footer">
+<p>Esta &eacute; uma notifica&ccedil;&atilde;o autom&aacute;tica do ServiceNow. Por favor, n&atilde;o responda este e-mail.</p>
+</div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Integration Failure</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Netflix - Administrator">83da731cc3f722101aae50e1b4013198</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>${title} - Integration Failure</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 16:55:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46691ffcc30432101aae50e1b401317b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Integration Failure</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Netflix" source="x_1798291_netflix">00d38ca4c33b22101aae50e1b40131eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">00d38ca4c33b22101aae50e1b40131eb</sys_scope>
+        <sys_update_name>sysevent_email_action_46691ffcc30432101aae50e1b401317b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 17:06:38</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
